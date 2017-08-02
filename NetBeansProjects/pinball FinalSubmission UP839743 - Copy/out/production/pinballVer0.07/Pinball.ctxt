@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=xPos\ yPos\ xVel\ yVel\ objectColor\ objectRadius\ theMachine
+comment0.target=Pinball(int,\ int,\ int,\ int,\ java.awt.Color,\ double,\ Machine)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Pinball\r\n\r\n\ @param\ xPos\ \ the\ horizontal\ coordinate\ of\ the\ object\r\n\ @param\ yPos\ \ the\ vertical\ coordinate\ of\ the\ object\r\n\ @param\ xVel\ \ the\ horizontal\ speed\ of\ the\ object\r\n\ @param\ yVel\ \ the\ vertical\ speed\ of\ the\ object\r\n\ @param\ objectRadius\ \ the\ radius\ (in\ pixels)\ of\ the\ object\r\n\ @param\ objectColor\ \ the\ color\ of\ the\ object\r\n\ @param\ theMachine\ \ the\ machine\ this\ object\ is\ in\r\n
+comment1.params=
+comment1.target=int\ getScore()
+comment1.text=\r\n\ get\ the\ score\ of\ the\ object\ in\ motion\r\n\ @return\ the\ objects\ current\ score\r\n
+comment2.params=addingScore
+comment2.target=void\ updateScore(int)
+comment2.text=\r\n\ Updates\ the\ score\ if\ the\ pinball\ has\ collided\ with\ a\ particular\ object\r\n\ @param\ addingScore\ the\ amount\ being\ added\ to\ the\ sum\ of\ the\ objects\ score\r\n
+comment3.params=
+comment3.target=void\ emptyScore()
+comment3.text=\r\n\ Sets\ the\ score\ of\ the\ object\ to\ zero\r\n
+comment4.params=object
+comment4.target=java.lang.String\ getScoreString(PinballObject)
+comment4.text=\r\n\ Converts\ the\ current\ score\ to\ a\ string\ so\ that\ it\ can\ be\ displayed\ on\ the\ ball\r\n\ @param\ object\ the\ object\ the\ score\ belongs\ to\r\n\ @return\ a\ String\ equivalent\ of\ the\ score\r\n
+comment5.params=
+comment5.target=boolean\ getBallStatus()
+comment5.text=\r\n\ See\ if\ the\ ball\ has\ been\ marked\ as\ "Removed"\ from\ the\ machine\r\n\ @return\ the\ removed\ status\ of\ the\ object\r\n
+comment6.params=
+comment6.target=void\ removeBall()
+comment6.text=\r\n\r\n
+numComments=7

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=xPos\ yPos\ xVel\ yVel\ objectColor\ objectRadius\ theMachine
+comment0.target=PinballTypeZero(int,\ int,\ int,\ int,\ java.awt.Color,\ double,\ Machine)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Pinball\ Type\ Zero\r\n\r\n\ @param\ xPos\ \ the\ horizontal\ coordinate\ of\ the\ object\r\n\ @param\ yPos\ \ the\ vertical\ coordinate\ of\ the\ object\r\n\ @param\ xVel\ \ the\ horizontal\ speed\ of\ the\ object\r\n\ @param\ yVel\ \ the\ vertical\ speed\ of\ the\ object\r\n\ @param\ objectRadius\ \ the\ radius\ (in\ pixels)\ of\ the\ object\r\n\ @param\ objectColor\ \ the\ color\ of\ the\ object\r\n\ @param\ theMachine\ \ the\ machine\ this\ object\ is\ in\r\n
+comment1.params=currentColor
+comment1.target=java.awt.Color\ newColor(java.awt.Color)
+comment1.text=\r\n\ Decides\ a\ new\ color\ to\ be\ set\ based\ on\ the\ current\ one\ (preventing\ it\ from\ being\ set\ to\ the\ same\ color)\r\n\ @param\ currentColor\ the\ current\ color\ of\ the\ object\r\n\ @return\ the\ new\ color\ to\ be\ assigned\r\n
+comment2.params=
+comment2.target=void\ WallEvent()
+comment2.text=\r\n\ When\ a\ type\ 0\ ball\ hits\ a\ wall\ this\ method\ is\ called,\ modifying\ the\ color\ of\ the\ ball\r\n
+comment3.params=
+comment3.target=void\ BallEvent()
+comment3.text=\r\n\ When\ a\ type\ 0\ ball\ hits\ another\ ball\ this\ method\ is\ called,\ altering\ the\ size\ of\ the\ ball,\ by\ changing\ the\ radius\ by\ 10%,\r\n\ decided\ via\ a\ random\ boolean\ generation\r\n\r\n\ NOTE\:\ this\ method\ is\ bug\ prone,\ balls\ may\ enlarge\ into\ another\ causing\ a\ clustered\ situation\r\n
+numComments=4

@@ -1,0 +1,1482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="All Places" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="caed4384-e86d-4675-bb00-709178d16ae6" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="Canvas.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Canvas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3925">
+              <caret line="259" column="0" lean-forward="false" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#Canvas#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#Canvas#1;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#Canvas#2;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#setVisible#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#isVisible#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#draw#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#fill#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#fillCircle#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#fillRectangle#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#erase#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#eraseCircle#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#eraseRectangle#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#erase#1;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#eraseOutline#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#drawImage#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#drawString#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#eraseString#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#drawLine#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#setForegroundColor#0;class#Canvas#0" expanded="true" />
+                <element signature="e#7942#7943#0" expanded="true" />
+                <element signature="docComment;method#getForegroundColor#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#setBackgroundColor#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#getBackgroundColor#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#setFont#0;class#Canvas#0" expanded="true" />
+                <element signature="e#8865#8866#0" expanded="true" />
+                <element signature="e#8905#8906#0" expanded="true" />
+                <element signature="docComment;method#getFont#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#setSize#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#getSize#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;method#wait#0;class#Canvas#0" expanded="true" />
+                <element signature="docComment;class#CanvasPane#0;class#Canvas#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Demo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+              <folding>
+                <element signature="docComment;class#Demo#0" expanded="true" />
+                <element signature="docComment;method#Demo#0;class#Demo#0" expanded="true" />
+                <element signature="docComment;method#main#0;class#Demo#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Machine.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Machine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8400">
+              <caret line="431" column="0" lean-forward="false" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#Machine#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#drawPinballObject#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#drawScore#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#drawMachine#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#getLeftWall#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#getRightWall#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#getTopWall#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#getBottomWall#0;class#Machine#0" expanded="true" />
+                <element signature="e#4761#4762#0" expanded="true" />
+                <element signature="e#4799#4800#0" expanded="true" />
+                <element signature="docComment;method#getLeftBottomWall#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#getRightBottomWall#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#pauseMachine#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#resetMachine#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#addPinball#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#addStatic#0;class#Machine#0" expanded="true" />
+                <element signature="e#6022#6023#0" expanded="true" />
+                <element signature="e#6078#6079#0" expanded="true" />
+                <element signature="docComment;method#ballCollision#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#staticObjectCollision#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#wallCollision#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#start#0;class#Machine#0" expanded="true" />
+                <element signature="docComment;method#end#0;class#Machine#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PinballObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PinballObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#PinballObject#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#move#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#getXPosition#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#getYPosition#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#getXVel#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#getYVel#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#getRadius#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#getIntRadius#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#getDiameter#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#getColor#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#xRebound#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#yRebound#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#setXVel#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#setYVel#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#setColor#0;class#PinballObject#0" expanded="true" />
+                <element signature="docComment;method#setRadius#0;class#PinballObject#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StaticObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StaticObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="18" column="64" lean-forward="false" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bumper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bumper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hole.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hole.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="21" column="65" lean-forward="false" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pinball.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pinball.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="23" column="117" lean-forward="false" selection-start-line="23" selection-start-column="117" selection-end-line="23" selection-end-column="117" />
+              <folding>
+                <element signature="docComment;class#Pinball#0" expanded="true" />
+                <element signature="docComment;method#Pinball#0;class#Pinball#0" expanded="true" />
+                <element signature="e#1161#1162#0" expanded="true" />
+                <element signature="e#1197#1198#0" expanded="true" />
+                <element signature="e#1249#1250#0" expanded="true" />
+                <element signature="e#1287#1288#0" expanded="true" />
+                <element signature="docComment;method#getScore#0;class#Pinball#0" expanded="true" />
+                <element signature="docComment;method#updateScore#0;class#Pinball#0" expanded="true" />
+                <element signature="docComment;method#emptyScore#0;class#Pinball#0" expanded="true" />
+                <element signature="docComment;method#getScoreString#0;class#Pinball#0" expanded="true" />
+                <element signature="docComment;method#getBallStatus#0;class#Pinball#0" expanded="true" />
+                <element signature="e#2393#2394#0" expanded="true" />
+                <element signature="e#2423#2424#0" expanded="true" />
+                <element signature="docComment;method#removeBall#0;class#Pinball#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PinballTypeThree.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PinballTypeThree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1025">
+              <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+              <folding>
+                <element signature="docComment;class#PinballTypeThree#0" expanded="true" />
+                <element signature="docComment;method#PinballTypeThree#0;class#PinballTypeThree#0" expanded="true" />
+                <element signature="docComment;method#WallEvent#0;class#PinballTypeThree#0" expanded="true" />
+                <element signature="docComment;method#BallEvent#0;class#PinballTypeThree#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PinballTypeZero.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PinballTypeZero.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1475">
+              <caret line="87" column="9" lean-forward="false" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
+              <folding>
+                <element signature="docComment;class#PinballTypeZero#0" expanded="true" />
+                <element signature="docComment;method#PinballTypeZero#0;class#PinballTypeZero#0" expanded="true" />
+                <element signature="docComment;method#newColor#0;class#PinballTypeZero#0" expanded="true" />
+                <element signature="docComment;method#WallEvent#0;class#PinballTypeZero#0" expanded="true" />
+                <element signature="docComment;method#BallEvent#0;class#PinballTypeZero#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Iterator</find>
+      <find>add</find>
+      <find>pause</find>
+      <find>draw</find>
+      <find>erase</find>
+      <find>erasecircl</find>
+      <find>setra</find>
+      <find>remove</find>
+      <find>remov</find>
+      <find>getXPosition</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/PinballObject.java" />
+        <option value="$PROJECT_DIR$/StaticObject.java" />
+        <option value="$PROJECT_DIR$/Bumper.java" />
+        <option value="$PROJECT_DIR$/Hole.java" />
+        <option value="$PROJECT_DIR$/../Old/pinballVer0.07/Machine.java" />
+        <option value="$PROJECT_DIR$/Pinball.java" />
+        <option value="$PROJECT_DIR$/Machine.java" />
+        <option value="$PROJECT_DIR$/PinballTypeThree.java" />
+        <option value="$PROJECT_DIR$/PinballTypeZero.java" />
+        <option value="$PROJECT_DIR$/Demo.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1256" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+  </component>
+  <component name="RunManager" selected="Application.default">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="pinballVer0.065" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="false" name="default" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Demo" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="pinballVer0.07" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.default" />
+    </list>
+    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="caed4384-e86d-4675-bb00-709178d16ae6" name="Default" comment="" />
+      <created>1489434492461</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1489434492461</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-11" y="-11" width="1942" height="1256" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17916666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36878216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34315425" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847342" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6620926" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847342" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3747856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17916666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6620926" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3361921" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Machine.java</url>
+          <line>142</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Machine.java</url>
+          <line>404</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="50" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="34" column="57" lean-forward="true" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+          <folding>
+            <element signature="docComment;class#Demo#0" expanded="true" />
+            <element signature="docComment;method#Demo#0;class#Demo#0" expanded="true" />
+            <element signature="docComment;method#main#0;class#Demo#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#Machine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawPinballObject#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawScore#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getLeftWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getRightWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getTopWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="e#4761#4762#0" expanded="true" />
+            <element signature="e#4799#4800#0" expanded="true" />
+            <element signature="docComment;method#getLeftBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getRightBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#pauseMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#resetMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#addPinball#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#addStatic#0;class#Machine#0" expanded="true" />
+            <element signature="e#6022#6023#0" expanded="true" />
+            <element signature="e#6078#6079#0" expanded="true" />
+            <element signature="docComment;method#ballCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#staticObjectCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#wallCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#start#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#end#0;class#Machine#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22500">
+          <caret line="900" column="0" lean-forward="false" selection-start-line="900" selection-start-column="0" selection-end-line="900" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pinball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#Pinball#0;class#Pinball#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="docComment;method#getScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#updateScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#emptyScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#getScoreString#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#getBallStatus#0;class#Pinball#0" expanded="true" />
+            <element signature="e#2393#2394#0" expanded="true" />
+            <element signature="e#2423#2424#0" expanded="true" />
+            <element signature="docComment;method#removeBall#0;class#Pinball#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#PinballObject#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#move#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getXPosition#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getYPosition#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getXVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getYVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getRadius#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getIntRadius#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getDiameter#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getColor#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#xRebound#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#yRebound#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setXVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setYVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setColor#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setRadius#0;class#PinballObject#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballTypeThree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1375">
+          <caret line="55" column="8" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+          <folding>
+            <element signature="docComment;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#PinballTypeThree#0;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#WallEvent#0;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#BallEvent#0;class#PinballTypeThree#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballTypeZero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="70" column="10" lean-forward="false" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
+          <folding>
+            <element signature="docComment;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#PinballTypeZero#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#newColor#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#WallEvent#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#BallEvent#0;class#PinballTypeZero#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bumper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Canvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#Canvas#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#Canvas#1;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#Canvas#2;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setVisible#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#isVisible#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#draw#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#fill#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#fillCircle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#fillRectangle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#erase#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseCircle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseRectangle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#erase#1;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseOutline#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#drawImage#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#drawString#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseString#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#drawLine#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setForegroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="e#7942#7943#0" expanded="true" />
+            <element signature="docComment;method#getForegroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setBackgroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#getBackgroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setFont#0;class#Canvas#0" expanded="true" />
+            <element signature="e#8865#8866#0" expanded="true" />
+            <element signature="e#8905#8906#0" expanded="true" />
+            <element signature="docComment;method#getFont#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setSize#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#getSize#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#wait#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;class#CanvasPane#0;class#Canvas#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Demo#0" expanded="true" />
+            <element signature="docComment;method#Demo#0;class#Demo#0" expanded="true" />
+            <element signature="docComment;method#main#0;class#Demo#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3700">
+          <caret line="174" column="31" lean-forward="false" selection-start-line="174" selection-start-column="31" selection-end-line="174" selection-end-column="31" />
+          <folding>
+            <element signature="docComment;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#Machine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawPinballObject#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawScore#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getLeftWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getRightWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getTopWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="e#4761#4762#0" expanded="true" />
+            <element signature="e#4799#4800#0" expanded="true" />
+            <element signature="docComment;method#getLeftBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getRightBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#pauseMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#resetMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#addPinball#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#addStatic#0;class#Machine#0" expanded="true" />
+            <element signature="e#6022#6023#0" expanded="true" />
+            <element signature="e#6078#6079#0" expanded="true" />
+            <element signature="docComment;method#ballCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#staticObjectCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#wallCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#start#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#end#0;class#Machine#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pinball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#Pinball#0;class#Pinball#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="docComment;method#getScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#updateScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#emptyScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#getScoreString#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#getBallStatus#0;class#Pinball#0" expanded="true" />
+            <element signature="e#2393#2394#0" expanded="true" />
+            <element signature="e#2423#2424#0" expanded="true" />
+            <element signature="docComment;method#removeBall#0;class#Pinball#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="docComment;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#PinballObject#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#move#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getXPosition#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getYPosition#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getXVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getYVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getRadius#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getIntRadius#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getDiameter#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getColor#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#xRebound#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#yRebound#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setXVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setYVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setColor#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setRadius#0;class#PinballObject#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballTypeThree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="docComment;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#PinballTypeThree#0;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#WallEvent#0;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#BallEvent#0;class#PinballTypeThree#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballTypeZero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="docComment;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#PinballTypeZero#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#newColor#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#WallEvent#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#BallEvent#0;class#PinballTypeZero#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StaticObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bumper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Canvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#Canvas#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#Canvas#1;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#Canvas#2;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setVisible#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#isVisible#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#draw#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#fill#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#fillCircle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#fillRectangle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#erase#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseCircle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseRectangle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#erase#1;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseOutline#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#drawImage#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#drawString#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseString#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#drawLine#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setForegroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="e#7942#7943#0" expanded="true" />
+            <element signature="docComment;method#getForegroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setBackgroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#getBackgroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setFont#0;class#Canvas#0" expanded="true" />
+            <element signature="e#8865#8866#0" expanded="true" />
+            <element signature="e#8905#8906#0" expanded="true" />
+            <element signature="docComment;method#getFont#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setSize#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#getSize#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#wait#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;class#CanvasPane#0;class#Canvas#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#Demo#0" expanded="true" />
+            <element signature="docComment;method#Demo#0;class#Demo#0" expanded="true" />
+            <element signature="docComment;method#main#0;class#Demo#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#Machine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawPinballObject#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawScore#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getLeftWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getRightWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getTopWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="e#4761#4762#0" expanded="true" />
+            <element signature="e#4799#4800#0" expanded="true" />
+            <element signature="docComment;method#getLeftBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getRightBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#pauseMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#resetMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#addPinball#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#addStatic#0;class#Machine#0" expanded="true" />
+            <element signature="e#6022#6023#0" expanded="true" />
+            <element signature="e#6078#6079#0" expanded="true" />
+            <element signature="docComment;method#ballCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#staticObjectCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#wallCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#start#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#end#0;class#Machine#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pinball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#Pinball#0;class#Pinball#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="docComment;method#getScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#updateScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#emptyScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#getScoreString#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#getBallStatus#0;class#Pinball#0" expanded="true" />
+            <element signature="e#2393#2394#0" expanded="true" />
+            <element signature="e#2423#2424#0" expanded="true" />
+            <element signature="docComment;method#removeBall#0;class#Pinball#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="docComment;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#PinballObject#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#move#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getXPosition#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getYPosition#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getXVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getYVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getRadius#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getIntRadius#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getDiameter#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getColor#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#xRebound#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#yRebound#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setXVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setYVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setColor#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setRadius#0;class#PinballObject#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballTypeThree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="docComment;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#PinballTypeThree#0;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#WallEvent#0;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#BallEvent#0;class#PinballTypeThree#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballTypeZero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="docComment;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#PinballTypeZero#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#newColor#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#WallEvent#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#BallEvent#0;class#PinballTypeZero#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StaticObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bumper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Canvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#Canvas#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#Canvas#1;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#Canvas#2;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setVisible#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#isVisible#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#draw#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#fill#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#fillCircle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#fillRectangle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#erase#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseCircle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseRectangle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#erase#1;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseOutline#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#drawImage#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#drawString#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseString#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#drawLine#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setForegroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="e#7942#7943#0" expanded="true" />
+            <element signature="docComment;method#getForegroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setBackgroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#getBackgroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setFont#0;class#Canvas#0" expanded="true" />
+            <element signature="e#8865#8866#0" expanded="true" />
+            <element signature="e#8905#8906#0" expanded="true" />
+            <element signature="docComment;method#getFont#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setSize#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#getSize#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#wait#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;class#CanvasPane#0;class#Canvas#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#Demo#0" expanded="true" />
+            <element signature="docComment;method#Demo#0;class#Demo#0" expanded="true" />
+            <element signature="docComment;method#main#0;class#Demo#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#Machine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawPinballObject#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawScore#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getLeftWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getRightWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getTopWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="e#4761#4762#0" expanded="true" />
+            <element signature="e#4799#4800#0" expanded="true" />
+            <element signature="docComment;method#getLeftBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getRightBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#pauseMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#resetMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#addPinball#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#addStatic#0;class#Machine#0" expanded="true" />
+            <element signature="e#6022#6023#0" expanded="true" />
+            <element signature="e#6078#6079#0" expanded="true" />
+            <element signature="docComment;method#ballCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#staticObjectCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#wallCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#start#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#end#0;class#Machine#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pinball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#Pinball#0;class#Pinball#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="docComment;method#getScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#updateScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#emptyScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#getScoreString#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#getBallStatus#0;class#Pinball#0" expanded="true" />
+            <element signature="e#2393#2394#0" expanded="true" />
+            <element signature="e#2423#2424#0" expanded="true" />
+            <element signature="docComment;method#removeBall#0;class#Pinball#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#PinballObject#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#move#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getXPosition#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getYPosition#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getXVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getYVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getRadius#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getIntRadius#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getDiameter#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getColor#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#xRebound#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#yRebound#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setXVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setYVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setColor#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setRadius#0;class#PinballObject#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballTypeThree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#PinballTypeThree#0;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#WallEvent#0;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#BallEvent#0;class#PinballTypeThree#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballTypeZero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#PinballTypeZero#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#newColor#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#WallEvent#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#BallEvent#0;class#PinballTypeZero#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StaticObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bumper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="900" column="0" lean-forward="false" selection-start-line="900" selection-start-column="0" selection-end-line="900" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="65" lean-forward="false" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StaticObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="18" column="64" lean-forward="false" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Old/pinballVer0.07/Machine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Canvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3925">
+          <caret line="259" column="0" lean-forward="false" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#Canvas#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#Canvas#1;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#Canvas#2;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setVisible#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#isVisible#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#draw#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#fill#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#fillCircle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#fillRectangle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#erase#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseCircle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseRectangle#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#erase#1;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseOutline#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#drawImage#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#drawString#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#eraseString#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#drawLine#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setForegroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="e#7942#7943#0" expanded="true" />
+            <element signature="docComment;method#getForegroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setBackgroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#getBackgroundColor#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setFont#0;class#Canvas#0" expanded="true" />
+            <element signature="e#8865#8866#0" expanded="true" />
+            <element signature="e#8905#8906#0" expanded="true" />
+            <element signature="docComment;method#getFont#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#setSize#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#getSize#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;method#wait#0;class#Canvas#0" expanded="true" />
+            <element signature="docComment;class#CanvasPane#0;class#Canvas#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pinball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="23" column="117" lean-forward="false" selection-start-line="23" selection-start-column="117" selection-end-line="23" selection-end-column="117" />
+          <folding>
+            <element signature="docComment;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#Pinball#0;class#Pinball#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="docComment;method#getScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#updateScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#emptyScore#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#getScoreString#0;class#Pinball#0" expanded="true" />
+            <element signature="docComment;method#getBallStatus#0;class#Pinball#0" expanded="true" />
+            <element signature="e#2393#2394#0" expanded="true" />
+            <element signature="e#2423#2424#0" expanded="true" />
+            <element signature="docComment;method#removeBall#0;class#Pinball#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8400">
+          <caret line="431" column="0" lean-forward="false" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#Machine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawPinballObject#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawScore#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#drawMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getLeftWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getRightWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getTopWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="e#4761#4762#0" expanded="true" />
+            <element signature="e#4799#4800#0" expanded="true" />
+            <element signature="docComment;method#getLeftBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#getRightBottomWall#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#pauseMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#resetMachine#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#addPinball#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#addStatic#0;class#Machine#0" expanded="true" />
+            <element signature="e#6022#6023#0" expanded="true" />
+            <element signature="e#6078#6079#0" expanded="true" />
+            <element signature="docComment;method#ballCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#staticObjectCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#wallCollision#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#start#0;class#Machine#0" expanded="true" />
+            <element signature="docComment;method#end#0;class#Machine#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballTypeThree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+          <folding>
+            <element signature="docComment;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#PinballTypeThree#0;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#WallEvent#0;class#PinballTypeThree#0" expanded="true" />
+            <element signature="docComment;method#BallEvent#0;class#PinballTypeThree#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#PinballObject#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#move#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getXPosition#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getYPosition#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getXVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getYVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getRadius#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getIntRadius#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getDiameter#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#getColor#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#xRebound#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#yRebound#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setXVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setYVel#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setColor#0;class#PinballObject#0" expanded="true" />
+            <element signature="docComment;method#setRadius#0;class#PinballObject#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PinballTypeZero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1475">
+          <caret line="87" column="9" lean-forward="false" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
+          <folding>
+            <element signature="docComment;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#PinballTypeZero#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#newColor#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#WallEvent#0;class#PinballTypeZero#0" expanded="true" />
+            <element signature="docComment;method#BallEvent#0;class#PinballTypeZero#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bumper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+          <folding>
+            <element signature="docComment;class#Demo#0" expanded="true" />
+            <element signature="docComment;method#Demo#0;class#Demo#0" expanded="true" />
+            <element signature="docComment;method#main#0;class#Demo#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>pinballVer0.07</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

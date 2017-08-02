@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=xPos\ yPos\ xVel\ yVel\ objectColor\ objectRadius\ theMachine
+comment0.target=PinballTypeThree(int,\ int,\ int,\ int,\ java.awt.Color,\ double,\ Machine)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Pinball\ Type\ Three\r\n\r\n\ @param\ xPos\ \ the\ horizontal\ coordinate\ of\ the\ object\r\n\ @param\ yPos\ \ the\ vertical\ coordinate\ of\ the\ object\r\n\ @param\ xVel\ \ the\ horizontal\ speed\ of\ the\ object\r\n\ @param\ yVel\ \ the\ vertical\ speed\ of\ the\ object\r\n\ @param\ objectRadius\ \ the\ radius\ (in\ pixels)\ of\ the\ object\r\n\ @param\ objectColor\ \ the\ color\ of\ the\ object\r\n\ @param\ theMachine\ \ the\ machine\ this\ object\ is\ in\r\n
+comment1.params=
+comment1.target=void\ WallEvent()
+comment1.text=\r\n\ When\ a\ type\ 3\ ball\ hits\ a\ wall\ this\ method\ is\ called,\ modifying\ the\ Direction\ of\ the\ ball\r\n
+comment2.params=
+comment2.target=void\ BallEvent()
+comment2.text=\r\n\ When\ a\ type\ 3\ ball\ hits\ another\ ball\ this\ method\ is\ called,\ modifying\ the\ Speed\ of\ the\ ball\ by\ being\ multiplied\ by\ a\ random\ double\ value\ between\ 1.5\ and\ 3.5\r\n
+numComments=3
