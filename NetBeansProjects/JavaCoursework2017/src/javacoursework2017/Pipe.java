@@ -33,6 +33,17 @@ public class Pipe {
         diameter = Diameter;
     }
     
+    public Pipe(int pG, int qOP, boolean cR, double Length, double Diameter){
+        plasticGrade = pG;
+        colourPrint = 0;
+        quantityOfPipes = qOP;
+        innerInsulation = false;
+        outerReinforcement = false;
+        chemicalResistance = cR;
+        length = Length;
+        diameter = Diameter;
+    }
+    
     //GETTERS
     
     public int getPlasticGrade(){
@@ -151,16 +162,18 @@ public class Pipe {
         return volume;
     }
     
-    public void calcBaseCost(){
+    public double calcBaseCost(){
         //calc radius and volume
+
         this.radius = calculateRadius(diameter);
         this.volume = calculateVolume(length, radius);
         
-        System.out.println(this.plasticGrade);
+        System.out.println(plasticGrade);
         
         //calc base cost
-        this.pipeCost = (this.volume * gradeCosts[this.plasticGrade - 1]);
+        this.pipeCost = (this.volume * gradeCosts[plasticGrade - 1]);
         System.out.println(this.pipeCost);
+        return pipeCost;
     }
    
     public void calcAdditonalCost(){

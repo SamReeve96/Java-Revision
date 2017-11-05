@@ -23,7 +23,9 @@ public class Main {
       pipeOrder1.calcBaseCost();
       pipeOrder1.calcAdditonalCost();
       
-      PipeTypeOne pipeOrder2 = new PipeTypeOne(1, 10, true, 10.00, 5.00);
+      PipeTypeOne pipeOrder2 = new PipeTypeOne(1, 10, true, 20.00, 5.00);
+      pipeOrder2.calcBaseCost();
+      pipeOrder2.calcAdditonalCost();
     }  
     
     public void addTOBasket(){}
