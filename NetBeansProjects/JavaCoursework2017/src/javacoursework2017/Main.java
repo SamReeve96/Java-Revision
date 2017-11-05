@@ -16,20 +16,15 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-    ArrayList<Pipe> basket = new ArrayList<>();
+    ArrayList<Pipe> basket = new ArrayList<>(); 
     
     public static void main(String[] args) {
-      typeOne pipeOrder1 = new typeOne(1, 0, 10, false, false, false, 10.00, 5.00);
-    }
-        
-    public void addToBasket(Pipe newPipe) {
-        basket.add(newPipe);
-    }
+      Pipe pipeOrder1 = new Pipe(1, 0, 10, false, false, true, 10.00, 5.00);
+      pipeOrder1.calcBaseCost();
+      pipeOrder1.calcAdditonalCost();
+      
+      PipeTypeOne pipeOrder2 = new PipeTypeOne(1, 10, true, 10.00, 5.00);
+    }  
     
-    public void fakeOrder()
-    {
-        typeOne pipeOrder1 = new typeOne(1, 0, 10, false, false, false, 10.00, 5.00);
-        addToBasket(pipeOrder1);
-        
-    }
+    public void addTOBasket(){}
 }
