@@ -20,7 +20,16 @@ public class Main {
     
     public static void main(String[] args) {
         
-        //test creation of each pipe type
+        testAllPipeTypes();
+    }  
+    
+    public void addToBasket(Pipe newPipe){
+    basket.add(newPipe);
+    }
+    
+    public static void testAllPipeTypes(){
+      
+//test creation of each pipe type
       Pipe pipeOrder0 = new Pipe(3, 0, 10, false, false, true, 10.00, 5.00);
       pipeOrder0.calcBaseCost();
       pipeOrder0.calcAdditonalCost();
@@ -50,9 +59,5 @@ public class Main {
       pipeOrder5.calcBaseCost();
       pipeOrder5.calcAdditonalCost();
       System.out.println("\n");
-    }  
-    
-    public void addToBasket(Pipe newPipe){
-    basket.add(newPipe);
     }
 }
