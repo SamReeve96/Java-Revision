@@ -19,14 +19,40 @@ public class Main {
     ArrayList<Pipe> basket = new ArrayList<>(); 
     
     public static void main(String[] args) {
-      Pipe pipeOrder1 = new Pipe(1, 0, 10, false, false, true, 10.00, 5.00);
+        
+        //test creation of each pipe type
+      Pipe pipeOrder0 = new Pipe(3, 0, 10, false, false, true, 10.00, 5.00);
+      pipeOrder0.calcBaseCost();
+      pipeOrder0.calcAdditonalCost();
+      System.out.println("\n");
+      
+      PipeTypeOne pipeOrder1 = new PipeTypeOne(3, 10, true, 10.00, 5.00);
       pipeOrder1.calcBaseCost();
       pipeOrder1.calcAdditonalCost();
+      System.out.println("\n");
       
-      PipeTypeOne pipeOrder2 = new PipeTypeOne(1, 10, true, 20.00, 5.00);
+      PipeTypeTwo pipeOrder2 = new PipeTypeTwo(3, 10, true, 10.00, 5.00);
       pipeOrder2.calcBaseCost();
       pipeOrder2.calcAdditonalCost();
+      System.out.println("\n");
+      
+      PipeTypeThree pipeOrder3 = new PipeTypeThree(3, 10, true, 10.00, 5.00);
+      pipeOrder3.calcBaseCost();
+      pipeOrder3.calcAdditonalCost();
+      System.out.println("\n");
+      
+      PipeTypeFour pipeOrder4 = new PipeTypeFour(3, 10, true, 10.00, 5.00);
+      pipeOrder4.calcBaseCost();
+      pipeOrder4.calcAdditonalCost();
+      System.out.println("\n");
+      
+      PipeTypeFive pipeOrder5 = new PipeTypeFive(3, 10, true, 10.00, 5.00);
+      pipeOrder5.calcBaseCost();
+      pipeOrder5.calcAdditonalCost();
+      System.out.println("\n");
     }  
     
-    public void addTOBasket(){}
+    public void addToBasket(Pipe newPipe){
+    basket.add(newPipe);
+    }
 }
