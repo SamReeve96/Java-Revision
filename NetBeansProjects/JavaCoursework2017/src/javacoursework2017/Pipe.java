@@ -146,12 +146,14 @@ public class Pipe {
     }
     
     public double calculateVolume(double length, double radius){
-        double thickness = radius - (radius * 0.9);
-        volume = (thickness * metresToInches(length));
+        //Pipe thickness is 10% of the radius
+        double thickness = radius * 0.1;
+        // pi r^2 * length
+        volume = (Math.PI * (thickness * thickness) * metresToInches(length));
         return volume;
     }
     
-    public void calcBaseCost(){
+    public double calcBaseCost(){
         //calc radius and volume
 
         this.radius = calculateRadius(diameter);
@@ -160,27 +162,42 @@ public class Pipe {
         System.out.println("Grade is: " + this.plasticGrade);
         
         //calc base cost
-        this.pipeCost = (this.volume * gradeCosts[this.plasticGrade - 1]);
-        System.out.println("Base cost: " + pipeCost);
+        double baseCost = (this.volume * gradeCosts[this.plasticGrade - 1]);
+        System.out.println("Base cost: " + baseCost);
+        return baseCost;
     }
    
-    public void calcAdditonalCost(){
+    public void calcFullCost(){
+        double baseCost = calcBaseCost();
+        //Intialise additonal cost variables
+        double chemAdd = 0;
+        double colourAdd = 0;
+        double InsulationAdd = 0;
+        double ReinforcementAdd = 0;
+        
         //Calc extras cost if applicable
-         if (this.colourPrint == 1){
-            pipeCost *= 1.12;
+        if (this.chemicalResistance == true){
+            chemAdd = baseCost * 0.14;
         }
-        else if (this.colourPrint == 2){
-            pipeCost *= 1.16;
+        if (this.colourPrint == 1){
+            colourAdd = baseCost * 0.12;
+        }
+        if (this.colourPrint == 2){
+            colourAdd = baseCost * 0.16;
         }
         if (this.innerInsulation == true){
-            pipeCost *= 1.13;
+            InsulationAdd = baseCost * 0.13;
         }
         if (this.outerReinforcement == true){
-            pipeCost *= 1.17;
+             ReinforcementAdd = baseCost * 0.17;
         }
-        if (this.chemicalResistance == true){
-            pipeCost *= 1.14;
-        }
+        
+        //Add up all additonal costs
+        pipeCost = baseCost + chemAdd + colourAdd + InsulationAdd + ReinforcementAdd;
+        
+        setPipeCost(pipeCost);
         System.out.println("Total Cost:" + pipeCost);
+        
     }
+    
 }

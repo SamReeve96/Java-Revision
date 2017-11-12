@@ -27,8 +27,9 @@ public class PipeTypeTwo extends Pipe {
     public PipeTypeTwo(int pG, int qOP, boolean cR, double Length, double Diameter){
         super(pG, 1, qOP, false, false, cR, Length, Diameter);
     }
-    //Type one can only add chem Resist to a pipe
-    public void calcAdditonalCost(double baseCost){
+
+    public void calcFullCost(){
+        double baseCost = calcBaseCost();
         //Intialise additonal cost variables
         double chemAdd = 0;
         double colourAdd = 0;

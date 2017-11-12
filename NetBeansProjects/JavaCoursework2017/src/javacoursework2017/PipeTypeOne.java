@@ -23,26 +23,14 @@ public class PipeTypeOne extends Pipe {
     public PipeTypeOne(){
     }
     
-    /* REDUNDANT CONSTRUCTOR
-    //Complex constructor
-    public PipeTypeOne(int pG, int qOP, boolean cR, double Length, double Diameter){
-        plasticGrade = pG;
-        colourPrint = 0;
-        quantityOfPipes = qOP;
-        innerInsulation = false;
-        outerReinforcement = false;
-        chemicalResistance = cR;
-        length = Length;
-        diameter = Diameter;
-    }
-    */
-    
     //Constructor using super class constructor (0 is a fixed value for colour print, and false's for Inner insulation and outer reinforcement)
     public PipeTypeOne(int pG, int qOP, boolean cR, double Length, double Diameter){
         super(pG, 0, qOP, false, false, cR, Length, Diameter);
     }
+    
     //Type one can only add chem Resist to a pipe
-    public void calcAdditonalCost(double baseCost){
+    public void calcFullCost(){
+        double baseCost = calcBaseCost();
         //Intialise additonal cost variables
         double chemAdd = 0;
         
