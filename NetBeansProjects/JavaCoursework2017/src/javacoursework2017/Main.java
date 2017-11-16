@@ -77,7 +77,7 @@ public class Main {
     public static void testAllPipeTypes(){  
         //test creation of a pipe
         Pipe pipeOrder0 = new Pipe(3, 0, 10, false, false, true, 10.00, 5.00);
-        System.out.println("Pipe created");
+        System.out.println("Super Pipe 0 created \n");
         
         //test pipeType (valid)
         PipeType(3, 0, 10, false, false, true, 10.00, 5.00);
