@@ -11,7 +11,7 @@ package javacoursework2017;
  */
 public class PipeTypeFour extends Pipe {
     //set variables that are unique to type one pipes
-    private int[] validGrades = {2,3,4,5};
+    //private int[] validGrades = {2,3,4,5};
     private boolean innerInsulation = true;
     private boolean outerReinforcement = false;
     
@@ -47,8 +47,9 @@ public class PipeTypeFour extends Pipe {
         
         //Add up all additonal costs
         pipeCost = baseCost + chemAdd + colourAdd + InsulationAdd;
-        
-        super.setPipeCost(pipeCost);
-        System.out.println(this.pipeCost);
+        pipeCost = Double.parseDouble(String.format ("%.2f", pipeCost));
+
+        setPipeCost(pipeCost);
+        System.out.println(pipeCost);
     }
 }

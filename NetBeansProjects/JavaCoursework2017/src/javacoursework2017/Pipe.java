@@ -10,7 +10,7 @@ package javacoursework2017;
  * @author Samuel
  */
 public class Pipe {
-    private int[] validGrades = {1,2,3,4,5};
+    //private int[] validGrades = {1,2,3,4,5};
     private double[] gradeCosts = {0.4,0.6,0.75,0.8,0.95};
     
     private int plasticGrade, colourPrint, quantityOfPipes;
@@ -163,7 +163,6 @@ public class Pipe {
         
         //calc base cost
         double baseCost = (this.volume * gradeCosts[this.plasticGrade - 1]);
-        System.out.println("Base cost: " + baseCost);
         return baseCost;
     }
    
@@ -193,10 +192,11 @@ public class Pipe {
         }
         
         //Add up all additonal costs
-        pipeCost = baseCost + chemAdd + colourAdd + InsulationAdd + ReinforcementAdd;
-        
+        pipeCost = baseCost + chemAdd + colourAdd + InsulationAdd + ReinforcementAdd; 
+        pipeCost = Double.parseDouble(String.format ("%.2f", pipeCost));
+
         setPipeCost(pipeCost);
-        System.out.println("Total Cost:" + pipeCost);
+        System.out.println(pipeCost);
         
     }
     

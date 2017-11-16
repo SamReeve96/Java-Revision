@@ -5,13 +5,15 @@
  */
 package javacoursework2017;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author Samuel
  */
 public class PipeTypeOne extends Pipe {
     //set variables that are unique to type one pipes
-    private int[] validGrades = {1,2,3};
+    //private int[] validGrades = {1,2,3};
     private boolean innerInsulation = false;
     private boolean outerReinforcement = false;
     
@@ -41,8 +43,10 @@ public class PipeTypeOne extends Pipe {
         
         //Add up all additonal costs
         pipeCost = baseCost + chemAdd;
+        pipeCost = Double.parseDouble(String.format ("%.2f", pipeCost));
+
         
-        super.setPipeCost(pipeCost);
-        System.out.println(this.pipeCost);
+        setPipeCost(pipeCost);
+        System.out.println(pipeCost);
     }
 }
