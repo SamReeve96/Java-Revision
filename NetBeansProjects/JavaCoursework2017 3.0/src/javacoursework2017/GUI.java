@@ -50,7 +50,6 @@ public class GUI extends javax.swing.JFrame {
         tblOrder = new javax.swing.JTable();
         lblQuantity = new javax.swing.JLabel();
         tfdQuantity = new javax.swing.JTextField();
-        btnRemovePipe = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Pipe Ordering System");
@@ -143,13 +142,6 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        btnRemovePipe.setText("Remove Pipe");
-        btnRemovePipe.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRemovePipeActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -189,14 +181,8 @@ public class GUI extends javax.swing.JFrame {
                                     .addComponent(cbxOuterReinforcement, javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(tfdQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 984, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(btnRemovePipe)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 984, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -209,7 +195,7 @@ public class GUI extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblDiameter)
                     .addComponent(tfdDiameter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblQuantity)
                     .addComponent(tfdQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -236,8 +222,7 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAddToBasket)
-                    .addComponent(btnClear)
-                    .addComponent(btnRemovePipe))
+                    .addComponent(btnClear))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
@@ -311,19 +296,6 @@ public class GUI extends javax.swing.JFrame {
     private void tfdQuantityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfdQuantityActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfdQuantityActionPerformed
-
-    private void btnRemovePipeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemovePipeActionPerformed
-        DefaultTableModel model = (DefaultTableModel) tblOrder.getModel();
-        int[] rows = tblOrder.getSelectedRows();
-        for(int i=0;i<rows.length;i++){
-            model.removeRow(rows[i]-i);
-            //Needs to account for row 0 (Confirm)
-            
-            //remove item from basket too!
-            basket.remove(i);
-        }
-        totalCostOfOrder();
-    }//GEN-LAST:event_btnRemovePipeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -451,7 +423,6 @@ public class GUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddToBasket;
     private javax.swing.JButton btnClear;
-    private javax.swing.JButton btnRemovePipe;
     private javax.swing.JCheckBox cbxChemResistance;
     private javax.swing.JCheckBox cbxInnerInsulation;
     private javax.swing.JCheckBox cbxOuterReinforcement;
