@@ -333,7 +333,7 @@ public class GUI extends javax.swing.JFrame {
         if (cbxChemResistance.isSelected() == true) {
             chemResist = true;
         }
-        PipeType(PlasticGrade, colourPrint, quantOfPipe, InnerIn, OuterR, chemResist, Length, Diameter);
+        PipeTypeDetector(PlasticGrade, colourPrint, quantOfPipe, InnerIn, OuterR, chemResist, Length, Diameter);
         addBasketToTable();
         totalCostOfOrder();
         clearForm();
@@ -392,7 +392,7 @@ public class GUI extends javax.swing.JFrame {
         
     }
     
-    //GUI Methods
+//GUI Methods
 
     public void clearForm(){
         tfdLength.setText("");
@@ -423,7 +423,7 @@ public class GUI extends javax.swing.JFrame {
         }
     }
     
-    //General Methods
+//General Methods
     
     public static ArrayList<Pipe> basket = new ArrayList<>();
     
@@ -436,37 +436,37 @@ public class GUI extends javax.swing.JFrame {
         lblTotalCostVar.setText(String.format ("%.2f", orderTotal));
     }
     
-    public static void PipeType(int pGrade, int colourPrint, int quantOfPipe, boolean innerInsul, boolean outerRein, boolean chemResist, double Length, double Diameter) {
+    public static void PipeTypeDetector(int pGrade, int colourPrint, int quantOfPipe, boolean innerInsul, boolean outerRein, boolean chemResist, double Length, double Diameter) {
         
-        if (pGrade <= 3 && colourPrint == 0 && innerInsul == false && outerRein == false){
+        if (pGrade <= 3 && colourPrint == 0 && !innerInsul && !outerRein){
             //Its pipe one!
             PipeTypeOne pipeOrderType1 = new PipeTypeOne(pGrade, quantOfPipe, chemResist, Length, Diameter);
             System.out.println("Pipe one created");
             pipeOrderType1.calcFullCost();
             basket.add(pipeOrderType1);
         }
-        else if (2 <= pGrade && pGrade <= 4 && colourPrint == 1 && innerInsul == false && outerRein == false) {
+        else if (2 <= pGrade && pGrade <= 4 && colourPrint == 1 && !innerInsul && !outerRein) {
             //its pipe two!
             PipeTypeTwo pipeOrderType2 = new PipeTypeTwo(pGrade, quantOfPipe, chemResist, Length, Diameter);
             System.out.println("Pipe two created");
             pipeOrderType2.calcFullCost();
             basket.add(pipeOrderType2);
         }
-        else if (2 <= pGrade && pGrade <= 5 && colourPrint == 2 && innerInsul == false && outerRein == false) {
+        else if (2 <= pGrade && pGrade <= 5 && colourPrint == 2 && !innerInsul && !outerRein) {
             //its pipe three!
             PipeTypeThree pipeOrderType3 = new PipeTypeThree(pGrade, quantOfPipe, chemResist, Length, Diameter);
             System.out.println("Pipe three created");
             pipeOrderType3.calcFullCost();
             basket.add(pipeOrderType3);
         }
-        else if (2 <= pGrade && pGrade <= 5 && colourPrint == 2 && innerInsul == true && outerRein == false) {
+        else if (2 <= pGrade && pGrade <= 5 && colourPrint == 2 && innerInsul && !outerRein) {
             //its pipe four!
             PipeTypeFour pipeOrderType4 = new PipeTypeFour(pGrade, quantOfPipe, chemResist, Length, Diameter);
             System.out.println("Pipe four created");
             pipeOrderType4.calcFullCost();
             basket.add(pipeOrderType4);
         }
-        else if (3 <= pGrade && pGrade <= 5 && colourPrint == 2 && innerInsul == true && outerRein == true) {
+        else if (3 <= pGrade && pGrade <= 5 && colourPrint == 2 && innerInsul && outerRein) {
             //its pipe five!
             PipeTypeFive pipeOrderType5 = new PipeTypeFive(pGrade, quantOfPipe, chemResist, Length, Diameter);
             System.out.println("Pipe five created");
