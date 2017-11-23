@@ -5,6 +5,10 @@
  */
 package javacoursework2017;
 
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 
@@ -30,75 +34,36 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblLength = new javax.swing.JLabel();
-        tfdLength = new javax.swing.JTextField();
-        tfdDiameter = new javax.swing.JTextField();
-        lblDiameter = new javax.swing.JLabel();
-        cmbxGrade = new javax.swing.JComboBox<>();
-        lblGrade = new javax.swing.JLabel();
-        lblColour = new javax.swing.JLabel();
-        cmbxColourPrint = new javax.swing.JComboBox<>();
-        lbl_InnerInsulation = new javax.swing.JLabel();
-        cbxInnerInsulation = new javax.swing.JCheckBox();
-        lblOuterReinforcement = new javax.swing.JLabel();
-        cbxOuterReinforcement = new javax.swing.JCheckBox();
-        lblChemResistance = new javax.swing.JLabel();
-        cbxChemResistance = new javax.swing.JCheckBox();
         btnAddToBasket = new javax.swing.JButton();
         btnClear = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblOrder = new javax.swing.JTable();
-        lblQuantity = new javax.swing.JLabel();
-        tfdQuantity = new javax.swing.JTextField();
         btnRemovePipe = new javax.swing.JButton();
+        pnlPipeDataForm = new javax.swing.JPanel();
+        tfdQuantity = new javax.swing.JTextField();
+        cbxOuterReinforcement = new javax.swing.JCheckBox();
+        lblLength = new javax.swing.JLabel();
+        cbxChemResistance = new javax.swing.JCheckBox();
+        tfdLength = new javax.swing.JTextField();
+        lbl_InnerInsulation = new javax.swing.JLabel();
+        lblDiameter = new javax.swing.JLabel();
+        lblColour = new javax.swing.JLabel();
+        lblQuantity = new javax.swing.JLabel();
+        lblGrade = new javax.swing.JLabel();
+        cmbxColourPrint = new javax.swing.JComboBox<>();
+        lblChemResistance = new javax.swing.JLabel();
+        cbxInnerInsulation = new javax.swing.JCheckBox();
+        tfdDiameter = new javax.swing.JTextField();
+        cmbxGrade = new javax.swing.JComboBox<>();
+        lblOuterReinforcement = new javax.swing.JLabel();
+        lblTotalCost = new javax.swing.JLabel();
+        lblTotalCostVar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Pipe Ordering System");
         setMaximumSize(new java.awt.Dimension(1200, 400));
         setMinimumSize(new java.awt.Dimension(1200, 400));
         setPreferredSize(new java.awt.Dimension(1200, 400));
-
-        lblLength.setText("Length (Meters):");
-
-        lblDiameter.setText("Diameter (Inches):");
-
-        cmbxGrade.setMaximumRowCount(5);
-        cmbxGrade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5" }));
-
-        lblGrade.setText("Plastic Grade:");
-
-        lblColour.setText("Colour Print:");
-
-        cmbxColourPrint.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2" }));
-        cmbxColourPrint.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbxColourPrintActionPerformed(evt);
-            }
-        });
-
-        lbl_InnerInsulation.setText("Inner insulation:");
-
-        cbxInnerInsulation.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbxInnerInsulationActionPerformed(evt);
-            }
-        });
-
-        lblOuterReinforcement.setText("Outer reinforcement:");
-
-        cbxOuterReinforcement.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbxOuterReinforcementActionPerformed(evt);
-            }
-        });
-
-        lblChemResistance.setText("Chemical resistance");
-
-        cbxChemResistance.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cbxChemResistanceActionPerformed(evt);
-            }
-        });
 
         btnAddToBasket.setText("Add Pipe to Basket");
         btnAddToBasket.addActionListener(new java.awt.event.ActionListener() {
@@ -135,7 +100,12 @@ public class GUI extends javax.swing.JFrame {
             tblOrder.getColumnModel().getColumn(7).setResizable(false);
         }
 
-        lblQuantity.setText("Quantity");
+        btnRemovePipe.setText("Remove Pipe");
+        btnRemovePipe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemovePipeActionPerformed(evt);
+            }
+        });
 
         tfdQuantity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,12 +113,140 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        btnRemovePipe.setText("Remove Pipe");
-        btnRemovePipe.addActionListener(new java.awt.event.ActionListener() {
+        cbxOuterReinforcement.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRemovePipeActionPerformed(evt);
+                cbxOuterReinforcementActionPerformed(evt);
             }
         });
+
+        lblLength.setText("Length (Meters):");
+
+        cbxChemResistance.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbxChemResistanceActionPerformed(evt);
+            }
+        });
+
+        lbl_InnerInsulation.setText("Inner insulation:");
+
+        lblDiameter.setText("Diameter (Inches):");
+
+        lblColour.setText("Colour Print:");
+
+        lblQuantity.setText("Quantity");
+
+        lblGrade.setText("Plastic Grade:");
+
+        cmbxColourPrint.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0", "1", "2" }));
+        cmbxColourPrint.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbxColourPrintActionPerformed(evt);
+            }
+        });
+
+        lblChemResistance.setText("Chemical resistance");
+
+        cbxInnerInsulation.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbxInnerInsulationActionPerformed(evt);
+            }
+        });
+
+        cmbxGrade.setMaximumRowCount(5);
+        cmbxGrade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5" }));
+
+        lblOuterReinforcement.setText("Outer reinforcement:");
+
+        javax.swing.GroupLayout pnlPipeDataFormLayout = new javax.swing.GroupLayout(pnlPipeDataForm);
+        pnlPipeDataForm.setLayout(pnlPipeDataFormLayout);
+        pnlPipeDataFormLayout.setHorizontalGroup(
+            pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPipeDataFormLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlPipeDataFormLayout.createSequentialGroup()
+                        .addGroup(pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblDiameter, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblLength, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGap(30, 30, 30)
+                        .addGroup(pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tfdLength, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(tfdDiameter, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlPipeDataFormLayout.createSequentialGroup()
+                        .addGroup(pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblOuterReinforcement)
+                            .addComponent(lblGrade)
+                            .addComponent(lblColour)
+                            .addComponent(lbl_InnerInsulation)
+                            .addComponent(lblChemResistance)
+                            .addComponent(lblQuantity))
+                        .addGap(18, 18, 18)
+                        .addGroup(pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(cmbxGrade, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(cmbxColourPrint, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(cbxInnerInsulation, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(cbxChemResistance, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(cbxOuterReinforcement, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(tfdQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
+        );
+        pnlPipeDataFormLayout.setVerticalGroup(
+            pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlPipeDataFormLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblLength)
+                    .addComponent(tfdLength, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblDiameter)
+                    .addComponent(tfdDiameter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblQuantity)
+                    .addComponent(tfdQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cmbxGrade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblGrade))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblColour)
+                    .addComponent(cmbxColourPrint, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbl_InnerInsulation)
+                    .addComponent(cbxInnerInsulation))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblOuterReinforcement)
+                    .addComponent(cbxOuterReinforcement))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblChemResistance)
+                    .addComponent(cbxChemResistance))
+                .addContainerGap())
+        );
+
+        cbxOuterReinforcement.getAccessibleContext().setAccessibleName("Outer Reinforcement check box");
+        lblLength.getAccessibleContext().setAccessibleName("Length");
+        cbxChemResistance.getAccessibleContext().setAccessibleName("Chemical Resistance check box");
+        tfdLength.getAccessibleContext().setAccessibleName("Length Text Box");
+        lbl_InnerInsulation.getAccessibleContext().setAccessibleName("Inner insulation");
+        lblDiameter.getAccessibleContext().setAccessibleName("Diameter");
+        lblColour.getAccessibleContext().setAccessibleName("Colour Print");
+        lblGrade.getAccessibleContext().setAccessibleName("Plastic Grade");
+        cmbxColourPrint.getAccessibleContext().setAccessibleName("Colour print Combo box");
+        cbxInnerInsulation.getAccessibleContext().setAccessibleName("Inner insulation check box");
+        tfdDiameter.getAccessibleContext().setAccessibleName("Diameter text box");
+        cmbxGrade.getAccessibleContext().setAccessibleName("Plastic Grade combo box");
+        lblOuterReinforcement.getAccessibleContext().setAccessibleName("Outer Reinforcement");
+
+        lblTotalCost.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblTotalCost.setText("Total Cost: £");
+
+        lblTotalCostVar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblTotalCostVar.setText("0.00");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -158,106 +256,39 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblDiameter, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblLength, javax.swing.GroupLayout.Alignment.LEADING))
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(tfdLength, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
-                            .addComponent(tfdDiameter))
-                        .addGap(35, 35, 35))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnAddToBasket)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnClear))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblOuterReinforcement)
-                                    .addComponent(lblGrade)
-                                    .addComponent(lblColour)
-                                    .addComponent(lbl_InnerInsulation)
-                                    .addComponent(lblChemResistance)
-                                    .addComponent(lblQuantity))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(cmbxGrade, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(cmbxColourPrint, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(cbxInnerInsulation, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(cbxChemResistance, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(cbxOuterReinforcement, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(tfdQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                        .addGap(4, 4, 4)
+                        .addComponent(btnAddToBasket)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnClear))
+                    .addComponent(pnlPipeDataForm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 984, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 984, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
                         .addComponent(btnRemovePipe)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(51, 51, 51)
+                        .addComponent(lblTotalCost)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblTotalCostVar)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblLength)
-                    .addComponent(tfdLength, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblDiameter)
-                    .addComponent(tfdDiameter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblQuantity)
-                    .addComponent(tfdQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cmbxGrade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblGrade))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblColour)
-                    .addComponent(cmbxColourPrint, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_InnerInsulation)
-                    .addComponent(cbxInnerInsulation))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblOuterReinforcement)
-                    .addComponent(cbxOuterReinforcement))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblChemResistance)
-                    .addComponent(cbxChemResistance))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(pnlPipeDataForm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAddToBasket)
                     .addComponent(btnClear)
-                    .addComponent(btnRemovePipe))
+                    .addComponent(btnRemovePipe)
+                    .addComponent(lblTotalCost)
+                    .addComponent(lblTotalCostVar))
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        lblLength.getAccessibleContext().setAccessibleName("Length");
-        tfdLength.getAccessibleContext().setAccessibleName("Length Text Box");
-        tfdDiameter.getAccessibleContext().setAccessibleName("Diameter text box");
-        lblDiameter.getAccessibleContext().setAccessibleName("Diameter");
-        cmbxGrade.getAccessibleContext().setAccessibleName("Plastic Grade combo box");
-        lblGrade.getAccessibleContext().setAccessibleName("Plastic Grade");
-        lblColour.getAccessibleContext().setAccessibleName("Colour Print");
-        cmbxColourPrint.getAccessibleContext().setAccessibleName("Colour print Combo box");
-        lbl_InnerInsulation.getAccessibleContext().setAccessibleName("Inner insulation");
-        cbxInnerInsulation.getAccessibleContext().setAccessibleName("Inner insulation check box");
-        lblOuterReinforcement.getAccessibleContext().setAccessibleName("Outer Reinforcement");
-        cbxOuterReinforcement.getAccessibleContext().setAccessibleName("Outer Reinforcement check box");
-        cbxChemResistance.getAccessibleContext().setAccessibleName("Chemical Resistance check box");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -396,12 +427,13 @@ public class GUI extends javax.swing.JFrame {
     
     public static ArrayList<Pipe> basket = new ArrayList<>();
     
-    public static void totalCostOfOrder(){
+    public void totalCostOfOrder(){
         double orderTotal = 0;
         for (Pipe p : basket) {
             orderTotal += p.getPipeCost();
             }
         System.out.println("Total Cost is: " + orderTotal );
+        lblTotalCostVar.setText(String.format ("%.2f", orderTotal));
     }
     
     public static void PipeType(int pGrade, int colourPrint, int quantOfPipe, boolean innerInsul, boolean outerRein, boolean chemResist, double Length, double Diameter) {
@@ -465,7 +497,10 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel lblLength;
     private javax.swing.JLabel lblOuterReinforcement;
     private javax.swing.JLabel lblQuantity;
+    private javax.swing.JLabel lblTotalCost;
+    private javax.swing.JLabel lblTotalCostVar;
     private javax.swing.JLabel lbl_InnerInsulation;
+    private javax.swing.JPanel pnlPipeDataForm;
     private javax.swing.JTable tblOrder;
     private javax.swing.JTextField tfdDiameter;
     private javax.swing.JTextField tfdLength;

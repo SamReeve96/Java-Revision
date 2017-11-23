@@ -12,6 +12,7 @@ package javacoursework2017;
 public class PipeTypeTwo extends Pipe {
     //set variables that are unique to type one pipes
     //private int[] validGrades = {2,3,4};
+    
     private boolean innerInsulation = false;
     private boolean outerReinforcement = false;
     
@@ -35,16 +36,17 @@ public class PipeTypeTwo extends Pipe {
         double colourAdd = 0;
         
         //Calc extras cost if applicable
-        if (this.chemicalResistance == true){
+        if (getChemicalResistance() == true){
             chemAdd = baseCost * 0.14;
         }
         //Type two can only 1 colour, not 0 or 2
         colourAdd = baseCost * 0.12;
         
         //Add up all additonal costs
-        pipeCost = baseCost + chemAdd + colourAdd;
+        pipeCost = baseCost + chemAdd;
+        pipeCost *= getQuantityOfPipes();
         pipeCost = Double.parseDouble(String.format ("%.2f", pipeCost));
-
+        
         setPipeCost(pipeCost);
         System.out.println(pipeCost);
 

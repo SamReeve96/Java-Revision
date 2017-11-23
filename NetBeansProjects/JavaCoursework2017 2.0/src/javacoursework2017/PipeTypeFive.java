@@ -38,7 +38,7 @@ public class PipeTypeFive extends Pipe {
         double ReinforcementAdd = 0;
         
         //Calc extras cost if applicable
-        if (this.chemicalResistance == true){
+        if (getChemicalResistance() == true){
             chemAdd = baseCost * 0.14;
         }
         //Type five can only 1 colour, not 0 or 2
@@ -51,9 +51,10 @@ public class PipeTypeFive extends Pipe {
         ReinforcementAdd = baseCost * 0.17;
         
         //Add up all additonal costs
-        pipeCost = baseCost + chemAdd + colourAdd + InsulationAdd + ReinforcementAdd;
+        pipeCost = baseCost + chemAdd;
+        pipeCost *= getQuantityOfPipes();
         pipeCost = Double.parseDouble(String.format ("%.2f", pipeCost));
-
+        
         setPipeCost(pipeCost);
         System.out.println(pipeCost);
     }

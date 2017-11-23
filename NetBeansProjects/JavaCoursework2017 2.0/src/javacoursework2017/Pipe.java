@@ -156,18 +156,28 @@ public class Pipe {
     public double calcBaseCost(){
         //calc radius and volume
 
-        this.radius = calculateRadius(diameter);
-        this.volume = calculateVolume(length, radius);
+        radius = calculateRadius(diameter);
+        volume = calculateVolume(length, radius);
         
-        System.out.println("Grade is: " + this.plasticGrade);
+        System.out.println("Grade is: " + plasticGrade);
         
         //calc base cost
-        double baseCost = (this.volume * gradeCosts[this.plasticGrade - 1]);
+        double baseCost = (volume * gradeCosts[plasticGrade - 1]);
         return baseCost;
     }
    
     public void calcFullCost(){
-        double baseCost = calcBaseCost();
+        
+        //calc radius and volume
+
+        radius = calculateRadius(diameter);
+        volume = calculateVolume(length, radius);
+        
+        System.out.println("Grade is: " + plasticGrade);
+        
+        //calc base cost
+        double baseCost = (volume * gradeCosts[plasticGrade - 1]);
+        
         //Intialise additonal cost variables
         double chemAdd = 0;
         double colourAdd = 0;
@@ -188,13 +198,14 @@ public class Pipe {
             InsulationAdd = baseCost * 0.13;
         }
         if (outerReinforcement == true){
-             ReinforcementAdd = baseCost * 0.17;
+            ReinforcementAdd = baseCost * 0.17;
         }
         
         //Add up all additonal costs
-        pipeCost = baseCost + chemAdd + colourAdd + InsulationAdd + ReinforcementAdd; 
+        pipeCost = baseCost + chemAdd + colourAdd + InsulationAdd + ReinforcementAdd;
+        pipeCost *= getQuantityOfPipes();
         pipeCost = Double.parseDouble(String.format ("%.2f", pipeCost));
-
+        
         setPipeCost(pipeCost);
         System.out.println(pipeCost);
         

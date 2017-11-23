@@ -35,16 +35,17 @@ public class PipeTypeThree extends Pipe {
         double colourAdd = 0;
         
         //Calc extras cost if applicable
-        if (this.chemicalResistance == true){
+        if (getChemicalResistance() == true){
             chemAdd = baseCost * 0.14;
         }
-        //Type two can only 1 colour, not 0 or 2
+        //Type three can only 2 colour, not 0 or 1
         colourAdd = baseCost * 0.16;
         
         //Add up all additonal costs
-        pipeCost = baseCost + chemAdd + colourAdd;
+        pipeCost = baseCost + chemAdd;
+        pipeCost *= getQuantityOfPipes();
         pipeCost = Double.parseDouble(String.format ("%.2f", pipeCost));
-
+        
         setPipeCost(pipeCost);
         System.out.println(pipeCost);
     }

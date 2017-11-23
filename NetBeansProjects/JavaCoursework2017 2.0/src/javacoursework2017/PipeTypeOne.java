@@ -45,8 +45,8 @@ public class PipeTypeOne extends Pipe {
         
         //Add up all additonal costs
         pipeCost = baseCost + chemAdd;
+        pipeCost *= getQuantityOfPipes();
         pipeCost = Double.parseDouble(String.format ("%.2f", pipeCost));
-
         
         setPipeCost(pipeCost);
         System.out.println(pipeCost);

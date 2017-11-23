@@ -46,9 +46,10 @@ public class PipeTypeFour extends Pipe {
         InsulationAdd = baseCost * 0.13;
         
         //Add up all additonal costs
-        pipeCost = baseCost + chemAdd + colourAdd + InsulationAdd;
+        pipeCost = baseCost + chemAdd;
+        pipeCost *= getQuantityOfPipes();
         pipeCost = Double.parseDouble(String.format ("%.2f", pipeCost));
-
+        
         setPipeCost(pipeCost);
         System.out.println(pipeCost);
     }
