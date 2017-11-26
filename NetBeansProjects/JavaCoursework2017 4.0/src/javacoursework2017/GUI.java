@@ -62,11 +62,12 @@ public class GUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Pipe Ordering System");
-        setMaximumSize(new java.awt.Dimension(1200, 800));
-        setMinimumSize(new java.awt.Dimension(1200, 400));
+        setMaximumSize(new java.awt.Dimension(1200, 500));
+        setMinimumSize(new java.awt.Dimension(1200, 500));
         setPreferredSize(new java.awt.Dimension(1200, 400));
 
         btnAddToBasket.setText("Add Pipe to Basket");
+        btnAddToBasket.setToolTipText("Add the pipe to the basket, \nNote: if the pipe is not valid it will not be added");
         btnAddToBasket.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddToBasketActionPerformed(evt);
@@ -74,6 +75,7 @@ public class GUI extends javax.swing.JFrame {
         });
 
         btnClear.setText("Clear Form");
+        btnClear.setToolTipText("Clears the contents of the text boxes and resets the checkBoxes and Combo boxes");
         btnClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnClearActionPerformed(evt);
@@ -102,6 +104,7 @@ public class GUI extends javax.swing.JFrame {
         }
 
         btnRemovePipe.setText("Remove Pipe");
+        btnRemovePipe.setToolTipText("Remove a selected pipe from the basket");
         btnRemovePipe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRemovePipeActionPerformed(evt);
@@ -121,6 +124,7 @@ public class GUI extends javax.swing.JFrame {
         });
 
         lblLength.setText("Length (Metres):");
+        lblLength.setToolTipText("Max Size: 6 Metres ");
 
         cbxChemResistance.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -250,6 +254,7 @@ public class GUI extends javax.swing.JFrame {
         lblTotalCostVar.setText("0.00");
 
         btnCompleteOrder.setText("Complete Order");
+        btnCompleteOrder.setToolTipText("Create a .txt file containg the contents of your order, \nfile will be created wherever the app is located");
         btnCompleteOrder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCompleteOrderActionPerformed(evt);
@@ -294,7 +299,7 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(pnlPipeDataForm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
-                .addComponent(lblUserMessage, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
+                .addComponent(lblUserMessage, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAddToBasket)
@@ -303,9 +308,10 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(lblTotalCost)
                     .addComponent(lblTotalCostVar)
                     .addComponent(btnCompleteOrder))
-                .addGap(43, 43, 43))
+                .addContainerGap())
         );
 
+        btnRemovePipe.getAccessibleContext().setAccessibleDescription("");
         lblUserMessage.getAccessibleContext().setAccessibleName("Message to user");
 
         pack();
@@ -582,7 +588,7 @@ public class GUI extends javax.swing.JFrame {
         byte buffer [] = orderBody.getBytes();
         out.write(buffer) ;
         clearForm();
-        lblUserMessage.setText("Order Successful , Check your folder!");
+        lblUserMessage.setText("Order Successful , Check the folder the application is in!");
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
