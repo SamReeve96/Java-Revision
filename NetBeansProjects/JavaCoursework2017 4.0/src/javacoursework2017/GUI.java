@@ -5,11 +5,10 @@
  */
 package javacoursework2017;
 
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -58,10 +57,12 @@ public class GUI extends javax.swing.JFrame {
         lblOuterReinforcement = new javax.swing.JLabel();
         lblTotalCost = new javax.swing.JLabel();
         lblTotalCostVar = new javax.swing.JLabel();
+        btnCompleteOrder = new javax.swing.JButton();
+        lblUserMessage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Pipe Ordering System");
-        setMaximumSize(new java.awt.Dimension(1200, 400));
+        setMaximumSize(new java.awt.Dimension(1200, 800));
         setMinimumSize(new java.awt.Dimension(1200, 400));
         setPreferredSize(new java.awt.Dimension(1200, 400));
 
@@ -72,7 +73,7 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        btnClear.setText("Clear");
+        btnClear.setText("Clear Form");
         btnClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnClearActionPerformed(evt);
@@ -119,7 +120,7 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
-        lblLength.setText("Length (Meters):");
+        lblLength.setText("Length (Metres):");
 
         cbxChemResistance.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -188,7 +189,7 @@ public class GUI extends javax.swing.JFrame {
                             .addComponent(cbxChemResistance, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(cbxOuterReinforcement, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(tfdQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap())
+                .addContainerGap(33, Short.MAX_VALUE))
         );
         pnlPipeDataFormLayout.setVerticalGroup(
             pnlPipeDataFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -248,47 +249,64 @@ public class GUI extends javax.swing.JFrame {
         lblTotalCostVar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblTotalCostVar.setText("0.00");
 
+        btnCompleteOrder.setText("Complete Order");
+        btnCompleteOrder.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCompleteOrderActionPerformed(evt);
+            }
+        });
+
+        lblUserMessage.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
+        lblUserMessage.setText(" ");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(4, 4, 4)
+                        .addComponent(pnlPipeDataForm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 960, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(btnAddToBasket)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnClear))
-                    .addComponent(pnlPipeDataForm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 984, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnClear)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnRemovePipe)
-                        .addGap(51, 51, 51)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnCompleteOrder)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblTotalCost)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblTotalCostVar)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(lblUserMessage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(pnlPipeDataForm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(19, 19, 19)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(pnlPipeDataForm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(lblUserMessage, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAddToBasket)
                     .addComponent(btnClear)
                     .addComponent(btnRemovePipe)
                     .addComponent(lblTotalCost)
-                    .addComponent(lblTotalCostVar))
-                .addContainerGap())
+                    .addComponent(lblTotalCostVar)
+                    .addComponent(btnCompleteOrder))
+                .addGap(43, 43, 43))
         );
+
+        lblUserMessage.getAccessibleContext().setAccessibleName("Message to user");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -315,28 +333,60 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_btnClearActionPerformed
 
     private void btnAddToBasketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddToBasketActionPerformed
-        double Length = Double.parseDouble(tfdLength.getText());
-        double Diameter = Double.parseDouble(tfdDiameter.getText());
-        int quantOfPipe = Integer.parseInt(tfdQuantity.getText());
+        
+        String errString = "";   
+        double length = 0.00;
+        double diameter = 0.00;
+        int quantOfPipe = 0;
+        
+        try {length = Double.parseDouble(tfdLength.getText());}
+        catch (NumberFormatException ex) {
+            System.err.println("Length err:" + ex.getMessage());
+            errString += "Length Field must contain a number, ";
+        }
+        
+        if (length > 6){errString += "Length must be 6 Metres or less, ";}
+        
+        try {diameter = Double.parseDouble(tfdDiameter.getText());}
+        catch (NumberFormatException ex) {
+            System.err.println("Diameter err:" + ex.getMessage());
+            errString += "Diameter Field must contain a number, ";
+        }
+        
+        try {quantOfPipe = Integer.parseInt(tfdQuantity.getText());}
+        catch (NumberFormatException ex) {
+            System.err.println("Quantity err:" + ex.getMessage());
+            errString += "Quantity Field must contain a whole number, ";
+        }
+        
         int colourPrint = cmbxColourPrint.getSelectedIndex();
-        int PlasticGrade = cmbxGrade.getSelectedIndex() + 1;
-        boolean InnerIn = false;
-        boolean OuterR = false;
+        int plasticGrade = cmbxGrade.getSelectedIndex() + 1;
+        boolean innerIn = false;
+        boolean outerR = false;
         boolean chemResist = false;
         
         if (cbxInnerInsulation.isSelected() == true) {
-            InnerIn = true;
+            innerIn = true;
         } 
         if (cbxOuterReinforcement.isSelected() == true) {
-            OuterR = true;
+            outerR = true;
         }
         if (cbxChemResistance.isSelected() == true) {
             chemResist = true;
         }
-        PipeTypeDetector(PlasticGrade, colourPrint, quantOfPipe, InnerIn, OuterR, chemResist, Length, Diameter);
-        addBasketToTable();
-        totalCostOfOrder();
-        clearForm();
+        
+        if (errString.equals("")){
+            try{PipeTypeDetector(plasticGrade, colourPrint, quantOfPipe, innerIn,
+                outerR, chemResist, length, diameter);}
+            catch (Exception ex){errString += ex.getMessage();}
+        }
+        
+        if (errString.equals("")){
+            addBasketToTable();
+            totalCostOfOrder();
+            clearForm();
+        }
+        else {lblUserMessage.setText("Error: " + errString);}
     }//GEN-LAST:event_btnAddToBasketActionPerformed
 
     private void tfdQuantityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfdQuantityActionPerformed
@@ -346,15 +396,43 @@ public class GUI extends javax.swing.JFrame {
     private void btnRemovePipeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemovePipeActionPerformed
         DefaultTableModel model = (DefaultTableModel) tblOrder.getModel();
         int[] rows = tblOrder.getSelectedRows();
-        for(int i=0;i<rows.length;i++){
-            model.removeRow(rows[i]-i);
-            //Needs to account for row 0 (Confirm)
+        if (rows.length != 1){lblUserMessage.setText("Error: Please select a single row");}
+        else{
             
+            //MultiRow Deletion disabled due to unfixable exception
+            
+            //for(int i=0;i<rows.length;i++){
+                //model.removeRow(rows[i]-i);
+                //Needs to account for row 0 (Confirm)
+
+                //remove item from basket too!
+                //basket.remove(rows[i]);
+            //}
+            
+            //Single row deleter
+            
+            //Remove from JTable
+            model.removeRow(rows[0]);
             //remove item from basket too!
-            basket.remove(i);
-        }
+            basket.remove(rows[0]);
+            
+        lblUserMessage.setText("Pipe Removed");
         totalCostOfOrder();
+        }
     }//GEN-LAST:event_btnRemovePipeActionPerformed
+
+    private void btnCompleteOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCompleteOrderActionPerformed
+        DefaultTableModel model = (DefaultTableModel) tblOrder.getModel();
+        if (basket.size() == 0){lblUserMessage.setText("Error: Please add Pipes to order");}
+        else{
+            try {
+                writeToFile();
+            } 
+            catch (Exception ex) {
+                Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_btnCompleteOrderActionPerformed
 
     /**
      * @param args the command line arguments
@@ -426,63 +504,91 @@ public class GUI extends javax.swing.JFrame {
 //General Methods
     
     public static ArrayList<Pipe> basket = new ArrayList<>();
+    double orderTotal = 0;
     
     public void totalCostOfOrder(){
-        double orderTotal = 0;
+        orderTotal = 0;
         for (Pipe p : basket) {
             orderTotal += p.getPipeCost();
             }
-        System.out.println("Total Cost is: " + orderTotal );
         lblTotalCostVar.setText(String.format ("%.2f", orderTotal));
     }
     
-    public static void PipeTypeDetector(int pGrade, int colourPrint, int quantOfPipe, boolean innerInsul, boolean outerRein, boolean chemResist, double Length, double Diameter) {
+    public void PipeTypeDetector(int pGrade, int colourPrint, int quantOfPipe, boolean innerInsul,
+            boolean outerRein, boolean chemResist, double Length, double Diameter) throws Exception{
         
         if (pGrade <= 3 && colourPrint == 0 && !innerInsul && !outerRein){
             //Its pipe one!
             PipeTypeOne pipeOrderType1 = new PipeTypeOne(pGrade, quantOfPipe, chemResist, Length, Diameter);
-            System.out.println("Pipe one created");
+            lblUserMessage.setText("Pipe type one created");
             pipeOrderType1.calcFullCost();
             basket.add(pipeOrderType1);
         }
         else if (2 <= pGrade && pGrade <= 4 && colourPrint == 1 && !innerInsul && !outerRein) {
             //its pipe two!
             PipeTypeTwo pipeOrderType2 = new PipeTypeTwo(pGrade, quantOfPipe, chemResist, Length, Diameter);
-            System.out.println("Pipe two created");
+            lblUserMessage.setText("Pipe type two created");
             pipeOrderType2.calcFullCost();
             basket.add(pipeOrderType2);
         }
         else if (2 <= pGrade && pGrade <= 5 && colourPrint == 2 && !innerInsul && !outerRein) {
             //its pipe three!
             PipeTypeThree pipeOrderType3 = new PipeTypeThree(pGrade, quantOfPipe, chemResist, Length, Diameter);
-            System.out.println("Pipe three created");
+            lblUserMessage.setText("Pipe type three created");
             pipeOrderType3.calcFullCost();
             basket.add(pipeOrderType3);
         }
         else if (2 <= pGrade && pGrade <= 5 && colourPrint == 2 && innerInsul && !outerRein) {
             //its pipe four!
             PipeTypeFour pipeOrderType4 = new PipeTypeFour(pGrade, quantOfPipe, chemResist, Length, Diameter);
-            System.out.println("Pipe four created");
+            lblUserMessage.setText("Pipe type four created");
             pipeOrderType4.calcFullCost();
             basket.add(pipeOrderType4);
         }
         else if (3 <= pGrade && pGrade <= 5 && colourPrint == 2 && innerInsul && outerRein) {
             //its pipe five!
             PipeTypeFive pipeOrderType5 = new PipeTypeFive(pGrade, quantOfPipe, chemResist, Length, Diameter);
-            System.out.println("Pipe five created");
+            lblUserMessage.setText("Pipe type five created");
             pipeOrderType5.calcFullCost();
             basket.add(pipeOrderType5);
         }
         else{
             //Not valid
-            System.out.println("Pipe details invalid, please refer to the table for valid pipe attributes");
+             throw new Exception("Pipe details invalid, \n "
+                + "please refer to the table for valid pipe attributes");
         }
+    }
+    
+    public void writeToFile() throws Exception {
+        FileOutputStream out = new FileOutputStream("newOrder.txt");
+        //String orderHeader = "";
+        String orderBody = "Order Details: Plastic Grade, Colour Print, Inner Insulation, outer reinforcement," 
+                            + " Chemical resistance, Length, Diameter, Quantity, Cost \r\n";
+        for (Pipe p : basket){
+            orderBody += Integer.toString(p.getPlasticGrade()) + ", "
+            + Integer.toString(p.getColourPrint()) + ", "
+            + Boolean.toString(p.getInnerInsulation()) + ", "
+            + Boolean.toString(p.getOuterReinforcement()) + ", "
+            + Boolean.toString(p.getChemicalResistance()) + ", "
+            + Double.toString(p.getLength()) + ", "
+            + Double.toString(p.getDiameter()) + ", "
+            + Integer.toString(p.getQuantityOfPipes()) + ", "
+            + Double.toString(p.getPipeCost()) + "\r\n";
+        } 
         
+        orderBody += "Total Cost:" + String.format ("%.2f", orderTotal);
+        
+        //string orderFile = orderHeader+
+        byte buffer [] = orderBody.getBytes();
+        out.write(buffer) ;
+        clearForm();
+        lblUserMessage.setText("Order Successful , Check your folder!");
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddToBasket;
     private javax.swing.JButton btnClear;
+    private javax.swing.JButton btnCompleteOrder;
     private javax.swing.JButton btnRemovePipe;
     private javax.swing.JCheckBox cbxChemResistance;
     private javax.swing.JCheckBox cbxInnerInsulation;
@@ -499,6 +605,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel lblQuantity;
     private javax.swing.JLabel lblTotalCost;
     private javax.swing.JLabel lblTotalCostVar;
+    private javax.swing.JLabel lblUserMessage;
     private javax.swing.JLabel lbl_InnerInsulation;
     private javax.swing.JPanel pnlPipeDataForm;
     private javax.swing.JTable tblOrder;
