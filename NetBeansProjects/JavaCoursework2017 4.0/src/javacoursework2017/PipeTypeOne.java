@@ -14,14 +14,9 @@ import java.text.DecimalFormat;
 public class PipeTypeOne extends Pipe {
     //set variables that are unique to type one pipes
     
-    //private int[] validGrades = {1,2,3};
-    //private boolean innerInsulation = false;
-    //private boolean outerReinforcement = false;
-    
-    //private int plasticGrade, colourPrint, quantityOfPipes;
-    //private boolean chemicalResistance;
-    private double pipeCost;
-    //private double length, diameter, radius, volume, costPerInchCubed, pipeCost;
+    private boolean innerInsulation = false;
+    private boolean outerReinforcement = false;  
+    private int colourPrint = 0;
 
     //Basic constructor
     public PipeTypeOne(){
@@ -29,11 +24,11 @@ public class PipeTypeOne extends Pipe {
     
     //Constructor using super class constructor (0 is a fixed value for colour print, and false's for Inner insulation and outer reinforcement)
     public PipeTypeOne(int pG, int qOP, boolean cR, double Length, double Diameter){
-        super(pG, 0, qOP, false, false, cR, Length, Diameter);
+        super(pG, qOP, cR, Length, Diameter);
     }
     
     //Type one can only add chem Resist to a pipe
-    public void calcFullCost(){
+    public void calcAddCost(){
         double baseCost = calcBaseCost();
         //Intialise additonal cost variables
         double chemAdd = 0;
@@ -44,7 +39,7 @@ public class PipeTypeOne extends Pipe {
         }
         
         //Add up all additonal costs
-        pipeCost = baseCost + chemAdd;
+        double pipeCost = baseCost + chemAdd;
         pipeCost *= getQuantityOfPipes();
         pipeCost = Double.parseDouble(String.format ("%.2f", pipeCost));
         

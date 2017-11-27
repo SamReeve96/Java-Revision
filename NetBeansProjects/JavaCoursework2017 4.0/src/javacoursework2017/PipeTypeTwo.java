@@ -15,10 +15,8 @@ public class PipeTypeTwo extends Pipe {
     
     private boolean innerInsulation = false;
     private boolean outerReinforcement = false;
-    
-    private int plasticGrade, colourPrint, quantityOfPipes;
-    private boolean chemicalResistance;
-    private double length, diameter, radius, volume, costPerInchCubed, pipeCost;
+    private int colourPrint = 1;
+
 
     //Basic constructor
     public PipeTypeTwo(){
@@ -26,10 +24,10 @@ public class PipeTypeTwo extends Pipe {
     
     //Constructor using super class constructor (1 is a fixed value for colour print, and false's for Inner insulation and outer reinforcement)
     public PipeTypeTwo(int pG, int qOP, boolean cR, double Length, double Diameter){
-        super(pG, 1, qOP, false, false, cR, Length, Diameter);
+        super(pG, qOP, cR, Length, Diameter);
     }
-
-    public void calcFullCost(){
+    
+    public void calcAddCost(){
         double baseCost = calcBaseCost();
         //Intialise additonal cost variables
         double chemAdd = 0;
@@ -43,7 +41,7 @@ public class PipeTypeTwo extends Pipe {
         colourAdd = baseCost * 0.12;
         
         //Add up all additonal costs
-        pipeCost = baseCost + chemAdd + colourAdd;
+        double pipeCost = baseCost + chemAdd + colourAdd;
         pipeCost *= getQuantityOfPipes();
         pipeCost = Double.parseDouble(String.format ("%.2f", pipeCost));
         

@@ -11,23 +11,19 @@ package javacoursework2017;
  */
 public abstract class Pipe {
     //private int[] validGrades = {1,2,3,4,5};
-    private double[] gradeCosts = {0.4,0.6,0.75,0.8,0.95};
     
-    private int plasticGrade, colourPrint, quantityOfPipes;
-    private boolean innerInsulation, outerReinforcement, chemicalResistance;
-    private double length, diameter, radius, volume, costPerInchCubed, pipeCost;
-
+    
+    private int plasticGrade, quantityOfPipes, colourPrint;
+    private boolean chemicalResistance, innerInsulation, outerReinforcement;
+    private double length, diameter, radius, volume, pipeCost;
     //Basic constructor
     public Pipe(){
     }
     
     //Complex constructor
-    public Pipe(int pG, int cP, int qOP, boolean iI, boolean oR, boolean cR, double Length, double Diameter){
+    public Pipe(int pG, int qOP, boolean cR, double Length, double Diameter){
         plasticGrade = pG;
-        colourPrint = cP;
         quantityOfPipes = qOP;
-        innerInsulation = iI;
-        outerReinforcement = oR;
         chemicalResistance = cR;
         length = Length;
         diameter = Diameter;
@@ -53,7 +49,7 @@ public abstract class Pipe {
     
     public boolean getOuterReinforcement(){
         return outerReinforcement;
-    }
+    } 
     
     public boolean getChemicalResistance(){
         return chemicalResistance;
@@ -75,28 +71,23 @@ public abstract class Pipe {
         return volume;
     }
     
-    public double getCostPerInchCubed(){
-        return costPerInchCubed;
-    }
-    
     public double getPipeCost(){
         return pipeCost;
     }
     
-    //SETTERS
-        
+    //SETTERS  
     public void setPlasticGrade(int pg){
         plasticGrade = pg;
     }
-    
+
     public void setColourPrint(int cp){
         colourPrint = cp;
     }
-    
+
     public void setQuantityOfPipes(int QoP){
         quantityOfPipes = QoP;
     }
-    
+
     public void setInnerInsulation(boolean iI){
         innerInsulation = iI;
     }
@@ -125,10 +116,6 @@ public abstract class Pipe {
         volume = Volume;
     }
     
-    public void setCostPerInchCubed(double cPIC){
-        costPerInchCubed = cPIC;
-    }
-    
     public void setPipeCost(double pC){
         pipeCost = pC;
     }
@@ -141,7 +128,7 @@ public abstract class Pipe {
     }
     
     public double calculateRadius(double diameter){
-        double radius = diameter/2;
+        radius = diameter/2;
         return radius;
     }
     
@@ -151,7 +138,7 @@ public abstract class Pipe {
         // pi r^2
         double SmallArea = (Math.PI * (smallRad * smallRad));
         double FullArea = (Math.PI * (radius * radius));
-        double volume = (FullArea - SmallArea) * metresToInches(length);
+        volume = (FullArea - SmallArea) * metresToInches(length);
         return volume;
     }
     
@@ -163,10 +150,12 @@ public abstract class Pipe {
         
         System.out.println("Grade is: " + plasticGrade);
         
+        double[] gradeCosts = {0.4,0.6,0.75,0.8,0.95};
+        
         //calc base cost, lookup the grade in the array (-1 due to array index)
         double baseCost = (volume * gradeCosts[plasticGrade - 1]);
         return baseCost;
     }
    
-    public abstract void calcFullCost();
+    public abstract void calcAddCost();
 }

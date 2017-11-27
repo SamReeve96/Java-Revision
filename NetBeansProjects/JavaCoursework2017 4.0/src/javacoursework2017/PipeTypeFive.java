@@ -10,14 +10,11 @@ package javacoursework2017;
  * @author Samuel
  */
 public class PipeTypeFive extends Pipe {
-    //set variables that are unique to type 5 pipes
-    //private int[] validGrades = {2,3,4,5};
+    //set variables that are unique to type Five pipes
+
     private boolean innerInsulation = true;
     private boolean outerReinforcement = true;
-    
-    private int plasticGrade, colourPrint, quantityOfPipes;
-    private boolean chemicalResistance;
-    private double length, diameter, radius, volume, costPerInchCubed, pipeCost;
+    private int colourPrint = 2;
 
     //Basic constructor
     public PipeTypeFive(){
@@ -25,11 +22,10 @@ public class PipeTypeFive extends Pipe {
     
     //Constructor using super class constructor (1 is a fixed value for colour print, and false's for Inner insulation and outer reinforcement)
     public PipeTypeFive(int pG, int qOP, boolean cR, double Length, double Diameter){
-        //(int pG, int cP, int qOP, boolean iI, boolean oR, boolean cR, double Length, double Diameter)
-        super(pG, 2, qOP, true, true, cR, Length, Diameter);
+        super(pG, qOP, cR, Length, Diameter);
     }
 
-    public void calcFullCost(){
+    public void calcAddCost(){
         double baseCost = calcBaseCost();
         //Intialise additonal cost variables
         double chemAdd = 0;
@@ -51,7 +47,7 @@ public class PipeTypeFive extends Pipe {
         ReinforcementAdd = baseCost * 0.17;
         
         //Add up all additonal costs
-        pipeCost = baseCost + chemAdd + colourAdd + InsulationAdd + ReinforcementAdd;
+        double pipeCost = baseCost + chemAdd + colourAdd + InsulationAdd + ReinforcementAdd;
         pipeCost *= getQuantityOfPipes();
         pipeCost = Double.parseDouble(String.format ("%.2f", pipeCost));
         
