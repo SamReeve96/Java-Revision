@@ -10,7 +10,6 @@ package javacoursework2017;
  * @author Samuel
  */
 public class PipeTypeFive extends Pipe {
-    //set variables that are unique to type Five pipes
 
     private boolean innerInsulation = true;
     private boolean outerReinforcement = true;

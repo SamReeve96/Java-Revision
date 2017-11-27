@@ -12,7 +12,6 @@ import java.text.DecimalFormat;
  * @author Samuel
  */
 public class PipeTypeOne extends Pipe {
-    //set variables that are unique to type one pipes
     
     private boolean innerInsulation = false;
     private boolean outerReinforcement = false;  

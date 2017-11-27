@@ -10,13 +10,12 @@ package javacoursework2017;
  * @author Samuel
  */
 public abstract class Pipe {
-    //private int[] validGrades = {1,2,3,4,5};
-    
-    
+
     private int plasticGrade, quantityOfPipes, colourPrint;
     private boolean chemicalResistance, innerInsulation, outerReinforcement;
     private double length, diameter, radius, volume, pipeCost;
-    //Basic constructor
+    
+//Basic constructor
     public Pipe(){
     }
     

@@ -10,7 +10,7 @@ package javacoursework2017;
  * @author Samuel
  */
 public class PipeTypeThree extends Pipe {
-    //set variables that are unique to type three pipes
+
     private boolean innerInsulation = false;
     private boolean outerReinforcement = false;
     private int colourPrint = 2;

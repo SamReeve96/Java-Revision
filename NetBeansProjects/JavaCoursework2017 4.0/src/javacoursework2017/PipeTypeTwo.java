@@ -10,8 +10,6 @@ package javacoursework2017;
  * @author Samuel
  */
 public class PipeTypeTwo extends Pipe {
-    //set variables that are unique to type one pipes
-    //private int[] validGrades = {2,3,4};
     
     private boolean innerInsulation = false;
     private boolean outerReinforcement = false;
