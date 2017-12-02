@@ -12,10 +12,6 @@ import java.text.DecimalFormat;
  * @author Samuel
  */
 public class PipeTypeOne extends Pipe {
-    
-    private boolean innerInsulation = false;
-    private boolean outerReinforcement = false;  
-    private int colourPrint = 0;
 
     //Basic constructor
     public PipeTypeOne(){

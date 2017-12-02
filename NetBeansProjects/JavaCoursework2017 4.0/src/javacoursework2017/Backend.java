@@ -42,44 +42,51 @@ public class Backend {
         return String.format("%.2f", orderTotal);
     }
     
-    public void PipeTypeDetector(int pGrade, int colourPrint, int quantOfPipe, boolean innerInsul,
+    public String PipeTypeDetector(int pGrade, int colourPrint, int quantOfPipe, boolean innerInsul,
             boolean outerRein, boolean chemResist, double Length, double Diameter) throws Exception{
         
+        String pipeCreated = "";
         if (pGrade <= 3 && colourPrint == 0 && !innerInsul && !outerRein){
             //Its pipe one!
             PipeTypeOne pipeOrderType1 = new PipeTypeOne(pGrade, quantOfPipe, chemResist, Length, Diameter);
             pipeOrderType1.calcAddCost();
             basket.add(pipeOrderType1);
+            pipeCreated = "Type one";
         }
         else if (2 <= pGrade && pGrade <= 4 && colourPrint == 1 && !innerInsul && !outerRein) {
             //its pipe two!
             PipeTypeTwo pipeOrderType2 = new PipeTypeTwo(pGrade, quantOfPipe, chemResist, Length, Diameter);
             pipeOrderType2.calcAddCost();
             basket.add(pipeOrderType2);
+            pipeCreated = "Type two";
         }
         else if (2 <= pGrade && pGrade <= 5 && colourPrint == 2 && !innerInsul && !outerRein) {
             //its pipe three!
             PipeTypeThree pipeOrderType3 = new PipeTypeThree(pGrade, quantOfPipe, chemResist, Length, Diameter);
             pipeOrderType3.calcAddCost();
             basket.add(pipeOrderType3);
+            pipeCreated = "Type three";
         }
         else if (2 <= pGrade && pGrade <= 5 && colourPrint == 2 && innerInsul && !outerRein) {
             //its pipe four!
             PipeTypeFour pipeOrderType4 = new PipeTypeFour(pGrade, quantOfPipe, chemResist, Length, Diameter);
             pipeOrderType4.calcAddCost();
             basket.add(pipeOrderType4);
+            pipeCreated = "Type four";
         }
         else if (3 <= pGrade && pGrade <= 5 && colourPrint == 2 && innerInsul && outerRein) {
             //its pipe five!
             PipeTypeFive pipeOrderType5 = new PipeTypeFive(pGrade, quantOfPipe, chemResist, Length, Diameter);
             pipeOrderType5.calcAddCost();
             basket.add(pipeOrderType5);
+            pipeCreated = "Type five";
         }
         else{
             //Not valid
              throw new Exception("Pipe details invalid, \n "
-                + "please refer to the table for valid pipe attributes");
+                + "This type of pipe cannot be made by the company");
         }
+        return pipeCreated;
     }
     
     public void writeToFile() throws Exception {

@@ -10,9 +10,7 @@ package javacoursework2017;
  * @author Samuel
  */
 public class PipeTypeThree extends Pipe {
-
-    private boolean innerInsulation = false;
-    private boolean outerReinforcement = false;
+    
     private int colourPrint = 2;
 
     //Basic constructor

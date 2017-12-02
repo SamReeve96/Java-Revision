@@ -407,8 +407,12 @@ public class Frontend extends javax.swing.JFrame {
             chemResist = true;
         }
         
+        //Used to inform the user what pipe they've created
+        String pipeCreated = "";
+        
         if (errString.equals("")){
-            try{Bcknd.PipeTypeDetector(plasticGrade, colourPrint, quantOfPipe, innerIn,
+            try{ 
+                pipeCreated = Bcknd.PipeTypeDetector(plasticGrade, colourPrint, quantOfPipe, innerIn,
                 outerR, chemResist, length, diameter);}
             catch (Exception ex){errString += ex.getMessage();}
         }
@@ -418,7 +422,7 @@ public class Frontend extends javax.swing.JFrame {
             String totalCost = Bcknd.totalCostOfOrder();
             lblTotalCostVar.setText(totalCost); 
             clearForm();
-            lblUserMessage.setText("Pipe Created");
+            lblUserMessage.setText("Pipe " + pipeCreated + " created");
         }
         else {lblUserMessage.setText("Error: " + errString);}
     }//GEN-LAST:event_btnAddToBasketActionPerformed
@@ -466,6 +470,7 @@ public class Frontend extends javax.swing.JFrame {
             } 
             catch (Exception ex) {
                 Logger.getLogger(Frontend.class.getName()).log(Level.SEVERE, null, ex);
+                lblUserMessage.setText("Error creating file! contact system ");
             }
         }
     }//GEN-LAST:event_btnCompleteOrderActionPerformed
