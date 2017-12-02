@@ -1,0 +1,4 @@
+Order Details: Plastic Grade, Colour Print, Inner Insulation, outer reinforcement, Chemical resistance, Length, Diameter, Quantity, Cost 
+1, 0, false, false, false, 1.0, 1.0, 1, 2.3500055526647716
+1, 0, false, false, false, 1.0, 1.0, 1, 2.3500055526647716
+Total Cost:4.70
