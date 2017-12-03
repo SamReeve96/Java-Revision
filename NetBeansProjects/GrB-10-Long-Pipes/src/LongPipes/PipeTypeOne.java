@@ -1,46 +1,66 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package LongPipes;
 
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
-
 /**
- *
- * @author Samuel
+ * PipeTypeOne is a class which has access methods (Getters and Setter) plus
+ * A method to calculate the additional costs of a pipe based on its unique attributes
+ * @author Samuel UP839743
+ * @version 1.0
+ * @since 02/12/17
  */
 public class PipeTypeOne extends Pipe {
 
+    //Class attributes, Unique combination for type 1
     private int colourPrint = 0;
-    NumberFormat formatter = NumberFormat.getCurrencyInstance();
     
-    //Basic constructor
+    /**
+     * Basic constructor
+     */
     public PipeTypeOne(){
     }
     
-    //Constructor using super class constructor (0 is a fixed value for colour print, and false's for Inner insulation and outer reinforcement)
+    /**
+     * Complex constructor - calls super constructor method (Currently Pipe)
+     * @param pG Plastic Grade
+     * @param qOP Quantity of Pipes
+     * @param cR Chemical resistance
+     * @param Length Length
+     * @param Diameter Diameter
+     */
     public PipeTypeOne(int pG, int qOP, boolean cR, double Length, double Diameter){
         super(pG, qOP, cR, Length, Diameter);
     }
     
-    //Type one can only add chem Resist to a pipe
+    /**
+     * Override of Pipe class method
+     * @return ColourPrint
+     */
+    @Override
+    public int getColourPrint(){
+        return colourPrint;
+    }
+    
+    /**
+     * Override of Pipe class method
+     * @param cp new colourPrint value
+     */
+    @Override
+    public void setColourPrint(int cp){
+        colourPrint = cp;
+    }
+    
+    /**
+     * Override of Abstract Pipe class method
+     * calculates the additional cost for the pipe and sets that price
+     * based on the Chemical Resistance value.
+     */
     public void calcAddCost(){
         double baseCost = calcBaseCost();
-        //Intialise additonal cost variables
         double chemAdd = 0;
         
-        //Calc extras cost if applicable - Note, best way to access chem add seen as made in 
+        //All pipes may or may not have chemical resistance. 0.14 the additional cost of Chemical Resistance
         if (getChemicalResistance() == true){
             chemAdd = baseCost * 0.14;
         }
-        
-        //Add up all additonal costs
-        double pipeCost = baseCost + chemAdd;
-      
-        setPipeCost(pipeCost);
-        System.out.println(pipeCost);
+        setPipeCost(baseCost + chemAdd);
     }
 }

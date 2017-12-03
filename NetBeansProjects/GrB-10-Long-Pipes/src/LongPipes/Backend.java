@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package LongPipes;
 
 import java.io.FileOutputStream;
@@ -33,21 +28,18 @@ public class Backend {
     /**
      * basket - ArrayList that holds all the pipes in an order
      */
-    public static ArrayList<Pipe> basket = new ArrayList<>();
-    
-    //orderTotal - total of all the pipes in the order
-    double orderTotal = 0;
+    private static ArrayList<Pipe> basket = new ArrayList<>();
     
     //NumberFormat - Formats strings of currency and adds £ to start of string
     NumberFormat formatter = NumberFormat.getCurrencyInstance();
 
     /* orderNo - Identifies the number of orders completed in the writeToFile() method
-    Note: if the program is closed the value is reset to 0, thus file will be overwritten!*/
-    int orderNo = 1;
+    Note: if the program is closed the value is reset to 1, thus file will be overwritten!*/
+    private int orderNo = 1;
 
     /**
      * set basket to contents of new basket
-     * @param newBasket 
+     * @param newBasket new basket to be set
      */
     public void setBasket(ArrayList<Pipe> newBasket){
         basket = newBasket;
@@ -66,7 +58,7 @@ public class Backend {
      * @return totalCost: the sum of all the pipes
      */
     public Double totalCostOfOrder(){
-        orderTotal = 0;
+        double orderTotal = 0;
         for (Pipe p : basket) {
             orderTotal += p.getPipeCost();
             }

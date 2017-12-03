@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package LongPipes;
 
 import java.text.NumberFormat;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.*;
+import java.util.logging.*;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -75,7 +70,7 @@ public class Frontend extends javax.swing.JFrame {
             }
         });
 
-        btnClear.setText("Clear All");
+        btnClear.setText("Clear Order");
         btnClear.setToolTipText("Clears the all of the form");
         btnClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -254,7 +249,7 @@ public class Frontend extends javax.swing.JFrame {
         );
         pnlMessagesLayout.setVerticalGroup(
             pnlMessagesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 115, Short.MAX_VALUE)
+            .addGap(0, 99, Short.MAX_VALUE)
             .addGroup(pnlMessagesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(pnlMessagesLayout.createSequentialGroup()
                     .addContainerGap()
@@ -279,14 +274,14 @@ public class Frontend extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnAddToBasket)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnClear)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnRemovePipe)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnClear)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnCompleteOrder)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(12, 12, 12)
                         .addComponent(lblTotalCost)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblTotalCostVar)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -300,14 +295,14 @@ public class Frontend extends javax.swing.JFrame {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addGap(27, 27, 27)
                 .addComponent(pnlMessages, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
+                .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAddToBasket)
-                    .addComponent(btnClear)
                     .addComponent(btnRemovePipe)
                     .addComponent(lblTotalCost)
                     .addComponent(lblTotalCostVar)
-                    .addComponent(btnCompleteOrder))
+                    .addComponent(btnCompleteOrder)
+                    .addComponent(btnClear))
                 .addContainerGap())
         );
 
@@ -329,7 +324,8 @@ public class Frontend extends javax.swing.JFrame {
         //Empty jTable, empty basket and re-calc total cost.
         DefaultTableModel model = (DefaultTableModel) tblOrder.getModel();
         model.setRowCount(0);
-        Bcknd.basket.clear();
+        ArrayList<Pipe> basket = Bcknd.getBasket();
+        basket.clear();
         lblTotalCostVar.setText(formatter.format(Bcknd.totalCostOfOrder()));
     }//GEN-LAST:event_btnClearActionPerformed
 
@@ -420,7 +416,8 @@ public class Frontend extends javax.swing.JFrame {
             //Remove from jTable
             model.removeRow(rows[0]);
             //remove item from basket
-            Backend.basket.remove(rows[0]);
+            ArrayList<Pipe> basket = Bcknd.getBasket();
+            basket.remove(rows[0]);
             lblUserMessage.setText("Pipe Removed");
             //Re-calculate total cost
             lblTotalCostVar.setText(formatter.format(Bcknd.totalCostOfOrder()));
@@ -433,7 +430,8 @@ public class Frontend extends javax.swing.JFrame {
      * @param evt 
      */
     private void btnCompleteOrderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCompleteOrderActionPerformed
-        if (Backend.basket.isEmpty()){lblUserMessage.setText("Error: Please add Pipes to order");}
+        ArrayList<Pipe> basket = Bcknd.getBasket();
+        if (basket.isEmpty()){lblUserMessage.setText("Error: Please add Pipes to order");}
         else{
             try {
                 //Write basket contents to file
@@ -442,7 +440,7 @@ public class Frontend extends javax.swing.JFrame {
                 clearFields();
                 DefaultTableModel model = (DefaultTableModel) tblOrder.getModel();
                 model.setRowCount(0);
-                Bcknd.basket.clear();
+                basket.clear();
                 lblTotalCostVar.setText(formatter.format(Bcknd.totalCostOfOrder()));
                 lblUserMessage.setText("Order Successful , Check the folder the application is in!");
             } 
@@ -509,17 +507,18 @@ public class Frontend extends javax.swing.JFrame {
         DefaultTableModel model = (DefaultTableModel) tblOrder.getModel();
         model.setRowCount(0);
         Object rowData[] = new Object[9];
-        for(int i = 0; i < Backend.basket.size(); i++){
-            rowData[0] = Backend.basket.get(i).getPlasticGrade();
-            rowData[1] = Backend.basket.get(i).getColourPrint();
-            rowData[2] = Backend.basket.get(i).getInnerInsulation();
-            rowData[3] = Backend.basket.get(i).getOuterReinforcement();
-            rowData[4] = Backend.basket.get(i).getChemicalResistance();
-            rowData[5] = Backend.basket.get(i).getLength();
-            rowData[6] = Backend.basket.get(i).getDiameter();
-            rowData[7] = Backend.basket.get(i).getQuantityOfPipes();
+        ArrayList<Pipe> basket = Bcknd.getBasket();
+        for(int i = 0; i < basket.size(); i++){
+            rowData[0] = basket.get(i).getPlasticGrade();
+            rowData[1] = basket.get(i).getColourPrint();
+            rowData[2] = basket.get(i).getInnerInsulation();
+            rowData[3] = basket.get(i).getOuterReinforcement();
+            rowData[4] = basket.get(i).getChemicalResistance();
+            rowData[5] = basket.get(i).getLength();
+            rowData[6] = basket.get(i).getDiameter();
+            rowData[7] = basket.get(i).getQuantityOfPipes();
             //Format pipecost so it appears as the currency
-            rowData[8] = formatter.format(Backend.basket.get(i).getPipeCost());
+            rowData[8] = formatter.format(basket.get(i).getPipeCost());
             model.addRow(rowData);
         }
     }
